@@ -1,0 +1,86 @@
+{
+  "name": "rodeo_microsite",
+  "version": "0.0.0",
+  "authors": [
+    "Steven Ng <steven.ng@braintapper.com>",
+    "Vince Iarusci <vince@iarusci.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.8",
+    "sugarjs": "~1.4.1",
+    "animate.css": "~3.2.0",
+    "flickity": "~0.2.0",
+    "fancybox": "*",
+    "bootstrap": "~3.3.2",
+    "html5shiv": "~3.7.2",
+    "greensock": "~1.15.1",
+    "vivus": "~0.1.2"
+  },
+  "overrides": {
+    "animate.css": {
+      "main": "*min.css"
+    },
+    "flickity": {
+      "main": "dist/*.*"
+    },
+    "classie": {
+      "ignore": true
+    },
+    "eventie": {
+      "ignore": true
+    },
+    "doc-ready": {
+      "ignore": true
+    },
+    "eventEmitter": {
+      "ignore": true
+    },
+    "fizzy-ui-utils": {
+      "ignore": true
+    },
+    "get-size": {
+      "ignore": true
+    },
+    "get-style-property": {
+      "ignore": true
+    },
+    "matches-selector": {
+      "ignore": true
+    },
+    "tap-listener": {
+      "ignore": true
+    },
+    "unidragger": {
+      "ignore": true
+    },
+    "unipointer": {
+      "ignore": true
+    },
+    "fancybox": {
+      "main": [
+        "source/*.js",
+        "source/*.css"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/js/*.js",
+        "dist/css/*.css"
+      ]
+    },
+    "html5shiv": {
+      "main": "dist/*.js"
+    },
+    "greensock": {
+      "ignore": true
+    }
+  }
+}
