@@ -10,5 +10,5 @@ module.exports = ()->
   return
 
 
-module.exports.taskName = 'compile-coffee'
+module.exports.taskName = 'compile-sass'
 module.exports.watch = 'databases/**/*.jade'
