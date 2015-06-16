@@ -1,0 +1,61 @@
+footer
+  section.contact
+    .container
+      section.col-sm-8
+        h4 Assign It To Us Technologies
+        p Assign It To Us was founded in 2012 by Vince Iarusci and Steven Ng.
+        p We are technology professionals with several years of experience in the field of business intelligence.
+        p If you're ready to start your project, we're here to help you.       
+      section.col-sm-4
+        h4 Contact Us
+        .contact-info
+          .col-sm-6
+            h5 By Mail
+            p 27 Wheelwright Crescent
+            p Toronto, ON M3N 1V2
+            p Canada
+         .col-sm-6
+            h5 By Phone
+            p 647-629-8986
+            h5 By Email
+            p just@assignittous.com
+
+  section.bottom-bar
+    
+    .container
+      .col-md-6 &#169; Assign It To Us, 2015
+      .col-md-6
+        
+        nav.pull-right
+        
+         .nav-item.r
+            a(href='/privacy')
+              span Privacy Policy
+          .nav-item.r
+            a(href='/terms')
+              span Terms and Conditions
+
+  script
+    :coffee
+      ((i, s, o, g, r, a, m) ->
+        i['GoogleAnalyticsObject'] = r
+        i[r] = i[r] or ->
+          (i[r].q = i[r].q or []).push arguments
+          return
+
+        i[r].l = 1 * new Date
+        a = s.createElement(o)
+        m = s.getElementsByTagName(o)[0]
+        a.async = 1
+        a.src = g
+        m.parentNode.insertBefore a, m
+        return
+      ) window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'
+      ga 'create', 'UA-49357553-1', 'auto'
+      ga 'send', 'pageview'
+    
+  
+  script(src="/bower/vivus.js")
+  script
+    :coffee
+      b = new Vivus('a',  {type: 'delayed', duration: 200})
