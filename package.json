@@ -9,7 +9,7 @@
     "cson": "^1.6.1",
     "del": "^1.2.0",
     "fs-extra": "^0.19.0",
-    "gulp": "~3.8.10",
+    "gulp": "^3.8.11",
     "gulp-angular-templatecache": "*",
     "gulp-coffee": "*",
     "gulp-concat": "*",
