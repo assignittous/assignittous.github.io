@@ -7,9 +7,12 @@ logger = require('./lib/logger.jade')
 
 module.exports = ()->
   logger.info 'ASSET', "Compile core jadescripts"
-  gulp.src("./_js/**/*.jade").pipe(plumber()).pipe(jade({bare:true})).pipe(concat("_app.js")).pipe(gulp.dest("./js"))
+
+  sourcePaths = ["./_content/**/*.jade", "./_content/**/_*.jade"]
+
+  gulp.src(sourcePaths).pipe(plumber()).pipe(jade({ locals: {} })).pipe(gulp.dest("./"))
   return
 
 
-module.exports.taskName = 'compile-jade-site'
-module.exports.watch = 'databases/**/*.jade'
+module.exports.taskName = 'compile-jade'
+module.exports.watch = './_content/**/*.jade'
