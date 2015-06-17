@@ -11,6 +11,7 @@ housekeeping: [
   "!./lib"
   "!./node_modules"
   "!./.gitignore"
+  "!./.nojekyll"
   "!./bower.json"
   "!./config.cson"
   "!./gulpfile.coffee"
