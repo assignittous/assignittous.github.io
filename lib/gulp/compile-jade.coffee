@@ -8,7 +8,7 @@ logger = require('../logger').Logger
 module.exports = ()->
   logger.info 'ASSET', "Compile core jadescripts"
 
-  sourcePaths = ["./_content/**/*.jade", "!./_content/**/_*.jade"]
+  sourcePaths = ["./_content/**/*.jade", "!./_content/**/_*.jade", "!./_content/blog"]
 
   gulp.src(sourcePaths).pipe(plumber()).pipe(jade({ locals: {} })).pipe(gulp.dest("./"))
   return
