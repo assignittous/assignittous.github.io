@@ -2,7 +2,7 @@
 gulp   = require('gulp')
 plumber = require('gulp-plumber')
 sass = require('gulp-sass')
-logger = require('./lib/logger.coffee')
+logger = require('../logger').Logger
 
 module.exports = ()->
   logger.info 'ASSET', "Compile core coffeescripts"
