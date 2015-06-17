@@ -19,7 +19,7 @@ module.exports = ()->
   logger.warn 'WARN', "Housekeeping"
 
   console.log settings.housekeeping
-  #del.sync  []
+  del.sync settings.housekeeping
   return
 
 
