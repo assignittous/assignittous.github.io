@@ -6,7 +6,7 @@
   "dependencies": {
     "chalk": "^1.0.0",
     "coffee-script": "^1.4.0",
-    "cson": "^1.6.1",
+    "cson": "^3.0.1",
     "del": "^1.2.0",
     "fs-extra": "^0.19.0",
     "gulp": "^3.8.11",
