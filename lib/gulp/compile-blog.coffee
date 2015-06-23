@@ -17,7 +17,7 @@ module.exports = ()->
 
     yyyy
       - mm
-        _dd-hhmm.jade
+        post.cson
 
 
     reverse sort the year folders
