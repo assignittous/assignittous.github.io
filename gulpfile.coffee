@@ -10,8 +10,22 @@ taskMasterOptions =
 gulp = require('gulp-task-master')(taskMasterOptions)
 
 
-# gulp.task "watch",  ['compile-lib.watch','compile-bin.watch']
 
-gulp.task "default", []
+botTasks = ['compile-jade.watch','compile-sass.watch']
+
+gulp.task "watch", botTasks
+gulp.task "bot", botTasks
+
+# Tasks that are in lib-gulp can be run as
+
+# gulp assets-bower
+# gulp compile-blog -- not working yet
+# gulp compile-coffee -- not working yet
+# gulp compile-jade -- compile _content folder
+# gulp compile-sass -- copmile _sass folder
+# gulp housekeeping -- deletes content before republishing
+
+
+gulp.task "default", ['compile-jade', 'compile-sass']
 
 
