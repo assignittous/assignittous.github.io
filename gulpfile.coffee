@@ -18,7 +18,7 @@ gulp.task "bot", botTasks
 
 # Tasks that are in lib-gulp can be run as
 
-# gulp assets-bower
+# gulp assets-bower -- not working yet
 # gulp compile-blog -- not working yet
 # gulp compile-coffee -- not working yet
 # gulp compile-jade -- compile _content folder
