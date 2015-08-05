@@ -8,7 +8,9 @@ Delete all compiled files (*.html)
 
 del = require('del')
 CSON = require('cson')
-logger = require('../logger').Logger
+aitutils = require('aitutils').aitutils
+file = aitutils.file
+logger = aitutils.logger
 
 
 module.exports = ()->
