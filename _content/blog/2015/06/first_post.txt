@@ -1,7 +1,7 @@
 title: "First Post"
 author: "Steven Ng"
 publish: true
-day: 30
+day: 1
 time: "17:30"
 data: "afsdfasdf"
 tags: ["12","123","1234"]
