@@ -11,7 +11,7 @@ gulp = require('gulp-task-master')(taskMasterOptions)
 
 
 
-botTasks = ['compile-jade.watch','compile-sass.watch', 'compile-blog.watch']
+botTasks = ['preview-jade.watch','preview-sass.watch', 'preview-blog.watch']
 
 gulp.task "watch", botTasks
 gulp.task "bot", botTasks
