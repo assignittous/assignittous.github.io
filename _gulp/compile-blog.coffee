@@ -213,7 +213,7 @@ module.exports = ()->
   }
   currentPage = 
     entries: []
-  pageCounter = 0
+  pageEntryCounter = 0
 
   #  console.log years.sort()
   _.forEach years, (year)->
@@ -238,14 +238,16 @@ module.exports = ()->
         entry["month"] = month
 
         currentPage.entries.push entry
+        console.log currentPage.entries.length
         # console.log currentPage
-        pageCounter++
-        if pageCounter == 5
+        pageEntryCounter++
+        if pageEntryCounter == 5
           
-          pageCounter = 0
-          blogContent.pages.push currentPage
+          pageEntryCounter = 0
+          blogContent.pages.push Object.clone(currentPage, true)
           currentPage.entries = []            
-
+          logger.info "blogContent.pages:"
+          console.log blogContent.pages       
 
       # archive is NOT paginated
 
@@ -275,8 +277,9 @@ module.exports = ()->
 
   if currentPage.entries.length > 0
     blogContent.pages.push currentPage
-
-
+    logger.info "Generated blog page #{blogContent.pages.length}"    
+    logger.info "blogContent.pages:"
+    console.log blogContent.pages               
   console.log blogContent.pages.length
   # permalinks
 
@@ -294,7 +297,8 @@ module.exports = ()->
       outputName = "index.html"
     else
       outputName = "page_#{pageNumber}.html"
-
+    logger.info "Page:"
+    console.log page
     file.save path.join("./blog", outputName), blogPage(page)
     pageNumber++
 
