@@ -1,0 +1,8 @@
+p archive.jade
+
+
+each year in years
+  h1= year.name
+  ul
+    each month in year.months
+      li= month
