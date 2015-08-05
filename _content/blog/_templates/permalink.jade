@@ -1,5 +1,5 @@
-p permalink.jade
-p= permalink
-h1=title
-div
-  =body
+h1
+  a(href=permalink)=title
+p= post_at
+p= author
+!=body

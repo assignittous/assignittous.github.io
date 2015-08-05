@@ -1,5 +1,10 @@
-p archive.jade
+p Archive For #{monthName} #{year}
+p=month
 
-ul
-  each entry in entries
-    li= entry.title
+each entry in entries
+  article
+    h1
+      a(href=entry.permalink)=entry.title
+    p= entry.post_at
+    p= entry.author
+    != entry.abstract

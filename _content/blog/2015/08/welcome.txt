@@ -1,0 +1,9 @@
+title: "Welcome"
+author: "Vince Iarusci"
+publish: true
+day: 3
+time: "17:30"
+---abstract
+Markdown content goes here
+---body
+Markdown *content* goes here

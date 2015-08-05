@@ -9,6 +9,7 @@
 ###
 
 aitutils = require('aitutils').aitutils
+general = aitutils.general
 file = aitutils.file
 logger = aitutils.logger
 path = require "path"
@@ -16,7 +17,7 @@ _ = require "lodash"
 CSON = require "cson"
 marked = require('marked')
 jade = require('jade')
-
+require "sugar"
 # paths
 
 
@@ -26,7 +27,7 @@ jade = require('jade')
 
 
 module.exports = ()->
-
+  monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
   findAbstract = (text)->
 
@@ -92,61 +93,60 @@ module.exports = ()->
   archiveIndex = 
     years: []
 
-
+  
   housekeeping = ()->
     # clean up the file structure for the blog
 
   callback = (dirPath, dirs, files)->
-    #console.log dirPath
-    #console.log dirs
-    #console.log files
+
     
     dirPath = path.normalize(dirPath)
     if dirPath == ".#{path.sep}entries"
       return
     else
-      console.log "currentPath"
-      currentPath = dirPath.replace("entries#{path.sep}","")
-      console.log currentPath
+      currentPath = dirPath.replace("_content#{path.sep}blog#{path.sep}","")
       
       # todo: normalize the path
 
-      pathElements = currentPath.split(path.sep)
-      console.log pathElements
+      pathElements = dirPath.split(path.sep)
       switch pathElements.length
 
         when 3 # year
-          console.log "year is #{currentPath}"
-          if (currentPath != "_templates") && (currentPath != "_drafts")
-
+          if !["_templates","_drafts"].any(currentPath)
+            months = dirs.sort()
+            
+            months = months.map (o)->
+              return {
+                number: o
+                name: monthNames[parseInt(o)-1]
+              }
             allContent[pathElements[2]] = {}
             archiveIndex.years.push
               name: currentPath
-              months: dirs.sort()
+              months: months
 
         when 4 # month
-          logger.info "132"
-          console.log allContent
           year = pathElements[2]
           month = pathElements[3]     
-          logger.info "135"       
           allContent[year][month] = []
-          logger.info "137"
           # sort the files in this folder
 
 
 
           _.forEach files, (item)->
             content = frontMatter(dirPath + "/" + item)
+            content["year"] = year
+            content["month"] = month
+            content["post_at"] = Date.create("#{year}-#{month}-#{content.day} #{content.time}").full()
             content["permalink"] = path.join("/","blog",year,month,item.replace('.txt','.html'))
-            logger.info "145"
+
             if content.publish == true
 
               allContent[year][month].push content
 
 
             else
-              console.log "skipped draft #{currentPath}/#{item}"
+              logger.info "skipped draft #{currentPath}/#{item}"
       return
 
   file.traverse "./_content/blog", callback
@@ -183,7 +183,7 @@ module.exports = ()->
       # permalinks
 
       _.forEach entries, (entry)->
-        console.log entry.permalink
+        
         # do Permalink
 
         permalink = jade.compileFile "./_content/blog/_templates/permalink.jade" , { pretty: true }
@@ -191,17 +191,7 @@ module.exports = ()->
         file.newFolder path.join("./", path.dirname(entry.permalink))
 
         file.save path.join("./", entry.permalink), permalink(entry)
-
-
-      # archive is not paginated
-
-      archive = jade.compileFile "./_content/blog/_templates/archive.jade", {pretty: true}
-
-      archivePath = path.join("./","blog", year, "#{month}.html")
-
-      file.save archivePath, archive(entries: entries)
-
-      
+        logger.info "Saved permalink #{entry.permalink}"
 
 
       # resort entries for blog
@@ -251,7 +241,7 @@ module.exports = ()->
         # console.log currentPage
         pageCounter++
         if pageCounter == 5
-          console.log "5"
+          
           pageCounter = 0
           blogContent.pages.push currentPage
           currentPage.entries = []            
@@ -262,16 +252,23 @@ module.exports = ()->
       archive = jade.compileFile "./_content/blog/_templates/archive.jade", {pretty: true}
 
       archivePath = path.join("./","blog", year, "#{month}.html")
-
-      file.save archivePath, archive(entries: entries)
+      monthName = monthNames[parseInt(month)-1]
+      file.save archivePath, archive(
+        {
+          entries: entries
+          year: year
+          month: month
+          monthName: monthName
+        }
+      )
+      logger.info "Saved archive for #{monthName} #{year}: #{archivePath}"
 
       
 
-
-
-      archiveIndexPage = jade.compileFile "./_content/blog/_templates/archive_index.jade", {pretty: true}
-      archiveIndexPath = path.join("./","blog", "archive.html")      
-      file.save archiveIndexPath, archiveIndexPage(archiveIndex)
+  archiveIndexPage = jade.compileFile "./_content/blog/_templates/archive_index.jade", {pretty: true}
+  archiveIndexPath = path.join("./","blog", "archive.html")      
+  file.save archiveIndexPath, archiveIndexPage(archiveIndex)
+  logger.info "Saved archive index "
 
 
 

@@ -1,8 +1,9 @@
-p archive.jade
+h1 Archive
 
 
 each year in years
   h1= year.name
   ul
     each month in year.months
-      li= month
+      li
+        a(href="/blog/#{year.name}/#{month.number}.html")= month.name

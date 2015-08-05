@@ -1,4 +1,19 @@
 h1 Blog
-ul
-  each entry in entries
-    li= entry.title
+
+p
+  a(href="/blog/archive.html") Archive Index
+
+each entry in entries
+  article
+    h1
+      a(href=entry.permalink)=entry.title
+    p= entry.post_at
+    p= entry.author
+    !=entry.body
+
+
+if total_pages > 1
+  p pagination goes here
+  p=total_pages
+else
+  p There's only one page!s
