@@ -11,7 +11,7 @@ gulp = require('gulp-task-master')(taskMasterOptions)
 
 
 
-botTasks = ['compile-jade.watch','compile-sass.watch']
+botTasks = ['compile-jade.watch','compile-sass.watch', 'compile-blog.watch']
 
 gulp.task "watch", botTasks
 gulp.task "bot", botTasks
@@ -26,6 +26,6 @@ gulp.task "bot", botTasks
 # gulp housekeeping -- deletes content before republishing
 
 
-gulp.task "default", ['compile-jade', 'compile-sass']
+gulp.task "default", ['compile-jade', 'compile-sass', 'compile-blog']
 
 

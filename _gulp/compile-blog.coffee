@@ -21,9 +21,7 @@ require "sugar"
 # paths
 
 
-# sourcePath = ["./src/**/*.coffee","!./src/cli.coffee", "!./src/gulp/**.*"]
-# targetPath = "./"
-
+sourcePath = ["./_content/blog/**/*.txt","./_content/blog/_templates/*.jade", "!./_content/blog/_drafts/*.txt"]
 
 
 module.exports = ()->
@@ -159,7 +157,6 @@ module.exports = ()->
   # Ensure that years are sorted in ascending order
   years = _.keys(allContent).sort()
 
-  #  console.log years.sort()
   _.forEach years, (year)->
 
     # do Archive
@@ -199,9 +196,6 @@ module.exports = ()->
 
 
 
-    #console.log dirPath
-    
-
   # reverse sort blog entries
 
   years = _.keys(allContent).sort (a,b)->
@@ -215,7 +209,7 @@ module.exports = ()->
     entries: []
   pageEntryCounter = 0
 
-  #  console.log years.sort()
+
   _.forEach years, (year)->
 
     # do Archive
@@ -238,16 +232,14 @@ module.exports = ()->
         entry["month"] = month
 
         currentPage.entries.push entry
-        console.log currentPage.entries.length
-        # console.log currentPage
+
         pageEntryCounter++
         if pageEntryCounter == 5
           
           pageEntryCounter = 0
           blogContent.pages.push Object.clone(currentPage, true)
           currentPage.entries = []            
-          logger.info "blogContent.pages:"
-          console.log blogContent.pages       
+
 
       # archive is NOT paginated
 
@@ -278,9 +270,7 @@ module.exports = ()->
   if currentPage.entries.length > 0
     blogContent.pages.push currentPage
     logger.info "Generated blog page #{blogContent.pages.length}"    
-    logger.info "blogContent.pages:"
-    console.log blogContent.pages               
-  console.log blogContent.pages.length
+
   # permalinks
 
   pageNumber = 1
@@ -297,8 +287,7 @@ module.exports = ()->
       outputName = "index.html"
     else
       outputName = "page_#{pageNumber}.html"
-    logger.info "Page:"
-    console.log page
+
     file.save path.join("./blog", outputName), blogPage(page)
     pageNumber++
 
@@ -310,12 +299,4 @@ module.exports = ()->
 
 
 
-
-     
-    
-
-
-
-
-
-# module.exports.watch = sourcePath
+module.exports.watch = sourcePath
