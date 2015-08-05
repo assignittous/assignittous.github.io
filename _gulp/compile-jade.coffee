@@ -10,7 +10,7 @@ logger = aitutils.logger
 module.exports = ()->
   logger.info 'ASSET', "Compile core jadescripts"
 
-  sourcePaths = ["./_content/**/*.jade", "!./_content/**/_*.jade", "!./_content/blog"]
+  sourcePaths = ["./_content/**/*.jade", "!./_content/**/_*.jade", "!./_content/blog/_templates/*.jade"]
 
   gulp.src(sourcePaths).pipe(plumber()).pipe(jade({ locals: {} })).pipe(gulp.dest("./"))
   return
