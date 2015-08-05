@@ -32,11 +32,9 @@ module.exports = ()->
 
     bodyDivider = text.indexOf("---body")
     abstractDivider = text.indexOf("---abstract")
-
     abstractStart = abstractDivider + 11
 
     if abstractDivider < 0
-      logger.warn "No abstract found"
       return ""
     else
       if (bodyDivider < 0) || (abstractDivider > bodyDivider)
@@ -54,7 +52,6 @@ module.exports = ()->
     bodyStart = bodyDivider + 7
 
     if bodyDivider < 0
-      logger.warn "No body found"
       return ""
     else
       if (abstractDivider < 0) || (bodyDivider > abstractDivider)
@@ -86,9 +83,8 @@ module.exports = ()->
     obj = CSON.parse locals
     # Add markdown content as attributes
     obj["body"] = marked(body).replace(/\n/g,"")
-    # todo: no paragraphs
     obj["abstract"] = marked(abstract).replace(/\n/g,"")
-    console.log obj
+
     return obj
 
 
