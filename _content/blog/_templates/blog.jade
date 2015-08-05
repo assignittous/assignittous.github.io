@@ -12,8 +12,19 @@ each entry in entries
     !=entry.body
 
 
-if total_pages > 1
-  p pagination goes here
-  p=total_pages
-else
-  p There's only one page!s
+section.pagination
+  if total_pages > 1
+    - var n = 0
+    ul
+      li 
+        a(href="index.html") First
+      while n < total_pages
+        - n++
+        if n == 1
+          li
+            a(href="index.html")= n
+        else
+          li
+            a(href="page_#{n}.html")= n
+      li 
+        a(href="page_#{total_pages}.html") Last
