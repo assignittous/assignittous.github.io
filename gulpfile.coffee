@@ -24,7 +24,7 @@ gulp.task "bot", botTasks
 # gulp compile-jade -- compile _content folder
 # gulp compile-sass -- copmile _sass folder
 # gulp housekeeping -- deletes content before republishing
-
+gulp.task "preview", ['preview-jade', 'preview-sass', 'preview-blog']
 
 gulp.task "default", ['compile-jade', 'compile-sass', 'compile-blog']
 
