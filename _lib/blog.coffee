@@ -1,19 +1,18 @@
 
 aitutils = require('aitutils').aitutils
-general = aitutils.general
 file = aitutils.file
 logger = aitutils.logger
+
 path = require "path"
-_ = require "lodash"
 CSON = require "cson"
-marked = require('marked')
-jade = require('jade')
+marked = require "marked"
+jade = require "jade"
 
 require "sugar"
 
 
 # todo: remove lodash dependency
-
+_ = require "lodash"
 
 exports.Blog =
 
@@ -37,27 +36,21 @@ exports.Blog =
         else # impossible case
           return ""
 
+  parseMarkdown: (markup)->
+    return marked(markup).replace(/\n/g,"")
 
 
-
-  frontMatter: (filePath)->
+  parseFrontMatter: (filePath)->
     text = file.open filePath
-
     csonEnd = text.indexOf('---')
     if csonEnd < 0
       csonEnd = text.length()
 
-
-    locals = text.substring(0,csonEnd)
-    # 
-    body = @findElement("---body","---abstract",text)
-    abstract = @findElement("---abstract","---body",text)
-
     # Parse the CSON portion
-    obj = CSON.parse locals
+    obj = CSON.parse text.substring(0,csonEnd)
     # Add markdown content as attributes
-    obj["body"] = marked(body).replace(/\n/g,"")
-    obj["abstract"] = marked(abstract).replace(/\n/g,"")
+    obj["body"] = @parseMarkdown @findElement("---body","---abstract",text)
+    obj["abstract"] = @parseMarkdown @findElement("---abstract","---body",text)
 
     return obj
 
@@ -69,6 +62,8 @@ exports.Blog =
   
   housekeeping: ()->
     # clean up the file structure for the blog
+
+
   aggregate: ()->
 
     that = @
@@ -111,7 +106,7 @@ exports.Blog =
 
 
             files.each (item)->
-              content = that.frontMatter(dirPath + "/" + item)
+              content = that.parseFrontMatter(dirPath + "/" + item)
               content["year"] = year
               content["month"] = month
               content["post_at"] = Date.create("#{year}-#{month}-#{content.day} #{content.time}").full()
