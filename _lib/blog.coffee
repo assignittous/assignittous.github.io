@@ -8,9 +8,11 @@ _ = require "lodash"
 CSON = require "cson"
 marked = require('marked')
 jade = require('jade')
-# blog = require("../_lib/blog").Blog
+
 require "sugar"
-# paths
+
+
+# todo: remove lodash dependency
 
 
 exports.Blog =
@@ -244,16 +246,11 @@ exports.Blog =
 
     years.each (year)->
 
-      # do Archive
-      
-
-
       content = that.allContent[year]
 
       months = Object.keys(content).sort (a,b)->
         return parseInt(b) - parseInt(a)
 
-      
       months.each (month)->
         entries = content[month]
         entries = _.sortByOrder entries, ["day","time"],["desc","desc"] 
