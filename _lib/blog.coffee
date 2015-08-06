@@ -161,38 +161,27 @@ exports.Blog =
           file.save path.join(that.outputPath, entry.permalink), permalink(entry)
           logger.info "Saved permalink: #{path.join(that.outputPath, entry.permalink)}"
 
-  blog: ()->
 
   archive: ()->
     that = @
 
     entries = _.sortByOrder entries, ["day","time"],["asc","asc"]
 
-
-    # reverse sort blog entries
-
+    # Reverse sort years
     years = Object.keys(@allContent).sort (a,b)->
         return parseInt(b) - parseInt(a)
 
     years.each (year)->
 
-      # do Archive
-      
-
-
       content = that.allContent[year]
 
-      months = Object.keys(content).sort (a,b)->
-        return parseInt(b) - parseInt(a)
+      months = Object.keys(content).sort()
 
       
       months.each (month)->
         entries = content[month]
-        entries = _.sortByOrder entries, ["day","time"],["desc","desc"] 
+        entries = _.sortByOrder entries, ["day","time"],["asc","asc"] 
 
-
-
-        # archive is NOT paginated
 
         archive = jade.compileFile "#{that.startPath}/_templates/archive.jade", {pretty: true}
 
@@ -208,7 +197,7 @@ exports.Blog =
         )
         logger.info "Saved archive for #{monthName}/#{year}: #{path.join(that.outputPath,"blog", year, "#{month}.html")}"
 
-    # write archive index pages
+    # write archive index page
 
     archiveIndexPage = jade.compileFile "#{that.startPath}/_templates/archive_index.jade", {pretty: true}
     archiveIndexPath = path.join(that.outputPath,"blog", "archive.html")      
@@ -216,27 +205,21 @@ exports.Blog =
     logger.info "Saved archive index: #{archiveIndexPath}"
 
   generate: ()->
-
     that = @
-
-
-        # resort entries for blog
-    entries = _.sortByOrder entries, ["day","time"],["asc","asc"]
-
-
-
-    # reverse sort blog entries
-
-    years = Object.keys(that.allContent).sort (a,b)->
-        return parseInt(b) - parseInt(a)
-
 
     blogContent = {
       pages: []
     }
     currentPage = 
       entries: []
+
     pageEntryCounter = 0
+
+
+    # reverse sort blog entries
+
+    years = Object.keys(that.allContent).sort (a,b)->
+        return parseInt(b) - parseInt(a)
 
 
     years.each (year)->
@@ -258,18 +241,19 @@ exports.Blog =
           currentPage.entries.push entry
 
           pageEntryCounter++
+
+          # Paginate
           if pageEntryCounter == 5
             pageEntryCounter = 0
             blogContent.pages.push Object.clone(currentPage, true)
             logger.info "Generated blog page #{blogContent.pages.length}" 
             currentPage.entries = []            
 
-
+    # Paginate remaining entries, if applicable
     if currentPage.entries.length > 0
       blogContent.pages.push currentPage
       logger.info "Generated blog page #{blogContent.pages.length}"    
 
-    # permalinks
 
     pageNumber = 1
     blogContent.pages.each (page)->
@@ -287,6 +271,7 @@ exports.Blog =
         outputName = "page_#{pageNumber}.html"
 
       file.save path.join(that.outputPath, "blog", outputName), blogPage(page)
+      
       logger.info "Saved blog page #{page}: #{path.join(that.outputPath, "blog", outputName)}"
       pageNumber++
 
