@@ -12,44 +12,28 @@ jade = require('jade')
 require "sugar"
 # paths
 
+
 exports.Blog =
 
   monthNames: ["January","February","March","April","May","June","July","August","September","October","November","December"]
+  outputPath: ""
+  startPath: "./_content/blog"
 
-  findAbstract: (text)->
+  findElement: (mainTag, otherTag, text)->
+    firstDivider = text.indexOf(mainTag)
+    secondDivider = text.indexOf(otherTag)
+    firstStart = secondDivider + otherTag.length
 
-    bodyDivider = text.indexOf("---body")
-    abstractDivider = text.indexOf("---abstract")
-    abstractStart = abstractDivider + 11
-
-    if abstractDivider < 0
+    if secondDivider < 0
       return ""
     else
-      if (bodyDivider < 0) || (abstractDivider > bodyDivider)
-        return text.substring(abstractStart)
+      if (firstDivider < 0) || (secondDivider > firstDivider)
+        return text.substring(firstStart)
       else
-        if abstractDivider < bodyDivider
-          return text.substring(abstractStart, bodyDivider)
+        if secondDivider < firstDivider
+          return text.substring(firstStart, firstDivider)
         else # impossible case
           return ""
-
-  findBody: (text)->
-
-    bodyDivider = text.indexOf("---body")
-    abstractDivider = text.indexOf("---abstract")
-    bodyStart = bodyDivider + 7
-
-    if bodyDivider < 0
-      return ""
-    else
-      if (abstractDivider < 0) || (bodyDivider > abstractDivider)
-        return text.substring(bodyStart)
-      else
-        if bodyDivider < abstractDivider
-          return text.substring(bodyStart, abstractDivider)
-        else # impossible case
-          return ""
-
 
 
 
@@ -64,8 +48,8 @@ exports.Blog =
 
     locals = text.substring(0,csonEnd)
     # 
-    body = findBody(text)
-    abstract = findAbstract(text)
+    body = @findElement("---body","---abstract",text)
+    abstract = @findElement("---abstract","---body",text)
 
     # Parse the CSON portion
     obj = CSON.parse locals
@@ -81,11 +65,13 @@ exports.Blog =
     years: []
 
   
-  housekeeping = ()->
+  housekeeping: ()->
     # clean up the file structure for the blog
+  aggregate: ()->
 
-  do: ()->
-    callback = (dirPath, dirs, files)->
+    that = @
+
+    file.traverse @startPath, (dirPath, dirs, files)->
 
       
       dirPath = path.normalize(dirPath)
@@ -104,59 +90,57 @@ exports.Blog =
               months = dirs.sort()
               
               months = months.map (o)->
+                
                 return {
                   number: o
-                  name: monthNames[parseInt(o)-1]
+                  name: that.monthNames[parseInt(o)-1]
                 }
-              allContent[pathElements[2]] = {}
-              archiveIndex.years.push
+              that.allContent[pathElements[2]] = {}
+              that.archiveIndex.years.push
                 name: currentPath
                 months: months
 
           when 4 # month
             year = pathElements[2]
             month = pathElements[3]     
-            allContent[year][month] = []
+            that.allContent[year][month] = []
             # sort the files in this folder
 
 
 
-            _.forEach files, (item)->
-              content = frontMatter(dirPath + "/" + item)
+            files.each (item)->
+              content = that.frontMatter(dirPath + "/" + item)
               content["year"] = year
               content["month"] = month
               content["post_at"] = Date.create("#{year}-#{month}-#{content.day} #{content.time}").full()
-              content["permalink"] = path.join("/","blog",year,month,item.replace('.txt','.html')).replace("\\","/")
+              content["permalink"] = path.join("/","blog",year,month,item.replace('.txt','.html')).replace(/\\/g,"/")
 
               if content.publish == true
 
-                allContent[year][month].push content
+                that.allContent[year][month].push content
 
 
               else
                 logger.info "skipped draft #{currentPath}/#{item}"
         return
 
-    file.traverse "./_content/blog", callback
 
-
-
-
-
-
+  permalinks: ()->
     # Ensure that years are sorted in ascending order
-    years = _.keys(allContent).sort()
+    
+    that = @
+    years = Object.keys(@allContent).sort()
 
-    _.forEach years, (year)->
+    years.each (year)->
 
       # do Archive
 
-      content = allContent[year]
-      months = _.keys(content).sort (a,b)->
+      content = that.allContent[year]
+      months = Object.keys(content).sort (a,b)->
         return parseInt(a) - parseInt(b)
 
       
-      _.forEach months, (month)->
+      months.each (month)->
         entries = content[month]
         entries = _.sortBy entries, (n)->
 
@@ -169,26 +153,84 @@ exports.Blog =
 
         # permalinks
 
-        _.forEach entries, (entry)->
+        entries.each (entry)->
           
           # do Permalink
 
-          permalink = jade.compileFile "./_content/blog/_templates/permalink.jade" , { pretty: true }
+          permalink = jade.compileFile "#{that.startPath}/_templates/permalink.jade" , { pretty: true }
 
-          file.newFolder path.join("./_preview/", path.dirname(entry.permalink))
+          file.newFolder path.join(that.outputPath, path.dirname(entry.permalink))
 
-          file.save path.join("./_preview/", entry.permalink), permalink(entry)
-          logger.info "Saved permalink #{entry.permalink}"
+          file.save path.join(that.outputPath, entry.permalink), permalink(entry)
+          logger.info "Saved permalink: #{path.join(that.outputPath, entry.permalink)}"
+
+  blog: ()->
+
+  archive: ()->
+    that = @
+
+    entries = _.sortByOrder entries, ["day","time"],["asc","asc"]
+
+
+    # reverse sort blog entries
+
+    years = Object.keys(@allContent).sort (a,b)->
+        return parseInt(b) - parseInt(a)
+
+    years.each (year)->
+
+      # do Archive
+      
+
+
+      content = that.allContent[year]
+
+      months = Object.keys(content).sort (a,b)->
+        return parseInt(b) - parseInt(a)
+
+      
+      months.each (month)->
+        entries = content[month]
+        entries = _.sortByOrder entries, ["day","time"],["desc","desc"] 
+
+
+
+        # archive is NOT paginated
+
+        archive = jade.compileFile "#{that.startPath}/_templates/archive.jade", {pretty: true}
+
+        archivePath = path.join(that.outputPath,"blog", year, "#{month}.html")
+        monthName = that.monthNames[parseInt(month)-1]
+        file.save archivePath, archive(
+          {
+            entries: entries
+            year: year
+            month: month
+            monthName: monthName
+          }
+        )
+        logger.info "Saved archive for #{monthName}/#{year}: #{path.join(that.outputPath,"blog", year, "#{month}.html")}"
+
+    # write archive index pages
+
+    archiveIndexPage = jade.compileFile "#{that.startPath}/_templates/archive_index.jade", {pretty: true}
+    archiveIndexPath = path.join(that.outputPath,"blog", "archive.html")      
+    file.save archiveIndexPath, archiveIndexPage(@archiveIndex)
+    logger.info "Saved archive index: #{archiveIndexPath}"
+
+  generate: ()->
+
+    that = @
 
 
         # resort entries for blog
-        entries = _.sortByOrder entries, ["day","time"],["asc","asc"]
+    entries = _.sortByOrder entries, ["day","time"],["asc","asc"]
 
 
 
     # reverse sort blog entries
 
-    years = _.keys(allContent).sort (a,b)->
+    years = Object.keys(that.allContent).sort (a,b)->
         return parseInt(b) - parseInt(a)
 
 
@@ -200,24 +242,24 @@ exports.Blog =
     pageEntryCounter = 0
 
 
-    _.forEach years, (year)->
+    years.each (year)->
 
       # do Archive
       
 
 
-      content = allContent[year]
+      content = that.allContent[year]
 
-      months = _.keys(content).sort (a,b)->
+      months = Object.keys(content).sort (a,b)->
         return parseInt(b) - parseInt(a)
 
       
-      _.forEach months, (month)->
+      months.each (month)->
         entries = content[month]
         entries = _.sortByOrder entries, ["day","time"],["desc","desc"] 
 
 
-        _.forEach entries, (entry)->
+        entries.each (entry)->
           entry["year"] = year
           entry["month"] = month
 
@@ -225,36 +267,10 @@ exports.Blog =
 
           pageEntryCounter++
           if pageEntryCounter == 5
-            
             pageEntryCounter = 0
             blogContent.pages.push Object.clone(currentPage, true)
+            logger.info "Generated blog page #{blogContent.pages.length}" 
             currentPage.entries = []            
-
-
-        # archive is NOT paginated
-
-        archive = jade.compileFile "./_content/blog/_templates/archive.jade", {pretty: true}
-
-        archivePath = path.join("./_preview/","blog", year, "#{month}.html")
-        monthName = monthNames[parseInt(month)-1]
-        file.save archivePath, archive(
-          {
-            entries: entries
-            year: year
-            month: month
-            monthName: monthName
-          }
-        )
-        logger.info "Saved archive for #{monthName} #{year}: #{archivePath}"
-
-        
-
-    archiveIndexPage = jade.compileFile "./_content/blog/_templates/archive_index.jade", {pretty: true}
-    archiveIndexPath = path.join("./_preview/","blog", "archive.html")      
-    file.save archiveIndexPath, archiveIndexPage(archiveIndex)
-    logger.info "Saved archive index "
-
-
 
 
     if currentPage.entries.length > 0
@@ -264,22 +280,27 @@ exports.Blog =
     # permalinks
 
     pageNumber = 1
-    _.forEach blogContent.pages, (page)->
+    blogContent.pages.each (page)->
       
       # indicate the maximum number of pages to do paging
       
       page["current_page"] = pageNumber
       page["total_pages"] = blogContent.pages.length
 
-      blogPage = jade.compileFile "./_content/blog/_templates/blog.jade" , { pretty: true }
+      blogPage = jade.compileFile "#{that.startPath}/_templates/blog.jade" , { pretty: true }
 
       if pageNumber == 1
         outputName = "index.html"
       else
         outputName = "page_#{pageNumber}.html"
 
-      file.save path.join("./_preview/blog", outputName), blogPage(page)
+      file.save path.join(that.outputPath, "blog", outputName), blogPage(page)
+      logger.info "Saved blog page #{page}: #{path.join(that.outputPath, "blog", outputName)}"
       pageNumber++
 
-
-
+  processTo: (outputPath)->
+    @outputPath = outputPath
+    @aggregate()
+    @permalinks()
+    @archive()
+    @generate()    
