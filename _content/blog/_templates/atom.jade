@@ -1,22 +1,22 @@
 feed(xmlns="http://www.w3.org/2005/Atom")
-    title Example Feed
-      subtitle A subtitle.
-      link(href="http://example.org/feed/", rel="self")
-      link(href="http://example.org/")
-      id urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6
-      updated 2003-12-13T18:30:02Z
+  title Assign It To Us Blog Feed
+    subtitle Assign It To Us Blog
+    link(href="http://assignittous.com/blog/atom.xml", rel="self")
+    link(href="http://assignittous.com/")
 
+    id urn:uuid:60a76c80-d399-11d9-b91C-0003939e0af6
+    updated 2003-12-13T18:30:02Z
+
+    each entry in entries
       entry
         title Atom-Powered Robots Run Amok
-        link(href="http://example.org/2003/12/13/atom03")
-        link(rel="alternate", type="text/html", href="http://example.org/2003/12/13/atom03.html")
-        link(rel="edit", href="http://example.org/2003/12/13/atom03/edit")
+        link(href=entry.permalink)
         id urn:uuid:1225c695-cfb8-4ebb-aaaa-80da344efa6a
         updated 2003-12-13T18:30:02Z
         summary Some text.
         content(type="xhtml")
           div(xmlns="http://www.w3.org/1999/xhtml")
-            p This is the entry content.
+            != entry.abstract
         author
-          name John Doe
-          email johndoe@example.com
+          name=entry.author
+
