@@ -7,6 +7,7 @@ path = require "path"
 CSON = require "cson"
 marked = require "marked"
 jade = require "jade"
+md5 = require "md5"
 
 require "sugar"
 
@@ -282,6 +283,7 @@ exports.Blog =
 
 
     currentPage = 
+      updated: Date.create().toISOString()
       entries: []
 
     entryCounter = 0
@@ -308,7 +310,8 @@ exports.Blog =
         entries.each (entry)->
           entry["year"] = year
           entry["month"] = month
-
+          entry["publish_date"] = Date.create("#{year}-#{month}-#{entry.day} #{entry.time}").toISOString()
+          entry["id"] = md5(entry.permalink)
 
 
           # Paginate
