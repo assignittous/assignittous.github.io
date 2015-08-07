@@ -275,9 +275,63 @@ exports.Blog =
       logger.info "Saved blog page #{page}: #{path.join(that.outputPath, "blog", outputName)}"
       pageNumber++
 
+
+  rss: ()->
+
+    that = @
+
+
+    currentPage = 
+      entries: []
+
+    entryCounter = 0
+
+
+    # reverse sort blog entries
+
+    years = Object.keys(that.allContent).sort (a,b)->
+        return parseInt(b) - parseInt(a)
+
+
+    years.each (year)->
+
+      content = that.allContent[year]
+
+      months = Object.keys(content).sort (a,b)->
+        return parseInt(b) - parseInt(a)
+
+      months.each (month)->
+        entries = content[month]
+        entries = _.sortByOrder entries, ["day","time"],["desc","desc"] 
+
+
+        entries.each (entry)->
+          entry["year"] = year
+          entry["month"] = month
+
+
+
+          # Paginate
+          if entryCounter < 10
+            currentPage.entries.push entry
+            entryCounter++
+
+    
+
+    feedPage = jade.compileFile "#{that.startPath}/_templates/atom.jade" , { pretty: true }
+
+
+    outputName = "atom.xml"
+
+    file.save path.join(that.outputPath, "blog", outputName), feedPage(currentPage)
+    
+    logger.info "Saved atom file: #{path.join(that.outputPath, "blog", outputName)}"
+
+
   processTo: (outputPath)->
     @outputPath = outputPath
     @aggregate()
     @permalinks()
     @archive()
     @generate()    
+    @rss()
