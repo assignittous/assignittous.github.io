@@ -13039,7 +13039,7 @@ section * {
   padding: 0;
   overflow: hidden;
   color: white;
-  background-color: #222527; }
+  background-color: #2c3e50; }
   .header-1-sub .container {
     position: relative; }
   .header-1-sub h3 {
@@ -13069,7 +13069,7 @@ section * {
     left: 0;
     visibility: hidden;
     overflow: hidden;
-    background-color: #363940;
+    background-color: #2c3e50;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -13081,6 +13081,7 @@ section * {
     transform-style: preserve-3d; }
   .header-1-sub .pt-page-1 .background {
     background-image: url("/_assets/images/NY_002.jpg");
+    background-color: #2c3e50;
     opacity: 75;
     filter: alpha(opacity=7500);
     opacity: 0.75;
