@@ -1,0 +1,93 @@
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Assign It To Us Blog Feed
+    <subtitle>Assign It To Us Blog</subtitle>
+    <link href="http://assignittous.com/blog/atom.xml" rel="self"/>
+    <link href="http://assignittous.com/"/>
+    <updated>2015-09-10T02:50:47.472Z</updated>
+    <entry>
+      <title>Welcome</title>
+      <link href="/blog/2015/08/welcome.html"/>
+      <id>6287a840e12bf812fb03f8c8e4a75f2a</id>
+      <updated>2015-08-03T21:30:00.000Z</updated>
+      <summary>!= entry.abstract</summary>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p><p><strong>We have considered</strong> your needs in developing the html version of our UI Kit, which contains.</p><p>We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
+        </div>
+      </content>
+      <author>
+        <name>Vince Iarusci</name>
+      </author>
+    </entry>
+    <entry>
+      <title>fifth</title>
+      <link href="/blog/2015/06/fifth.html"/>
+      <id>bff1ebed02f355abea51b4eacb8a0f5b</id>
+      <updated>2015-06-30T21:30:00.000Z</updated>
+      <summary>!= entry.abstract</summary>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>Markdown content goes here</p>
+        </div>
+      </content>
+      <author>
+        <name></name>
+      </author>
+    </entry>
+    <entry>
+      <title>Come On Steven!!!</title>
+      <link href="/blog/2015/06/come_on_steven.html"/>
+      <id>0506c226115dc90ae9ec552697d35cde</id>
+      <updated>2015-06-30T19:30:00.000Z</updated>
+      <summary>!= entry.abstract</summary>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>Markdown content goes here</p>
+        </div>
+      </content>
+      <author>
+        <name>Vince Iarusci</name>
+      </author>
+    </entry>
+    <entry>
+      <title>fourth</title>
+      <link href="/blog/2015/06/fourth.html"/>
+      <id>c6b5ef843f0a3c60d4c29d0cbebe72c0</id>
+      <updated>2015-06-08T21:30:00.000Z</updated>
+      <summary>!= entry.abstract</summary>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>Markdown content goes here</p>
+        </div>
+      </content>
+      <author>
+        <name></name>
+      </author>
+    </entry>
+    <entry>
+      <title>secondi</title>
+      <link href="/blog/2015/06/second_post.html"/>
+      <id>e18685808cc70a7272b4d539df7d6c61</id>
+      <updated>2015-06-04T21:30:00.000Z</updated>
+      <summary>!= entry.abstract</summary>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>Markdown content goes here</p>
+        </div>
+      </content>
+      <author>
+        <name></name>
+      </author>
+    </entry>
+    <entry>
+      <title>First Post</title>
+      <link href="/blog/2015/06/first_post.html"/>
+      <id>c4efb86194648e4c182541b41453190e</id>
+      <updated>2015-06-01T21:30:00.000Z</updated>
+      <summary>!= entry.abstract</summary>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+        </div>
+      </content>
+      <author>
+        <name>Steven Ng</name>
+      </author>
+    </entry>
+  </title>
+</feed>

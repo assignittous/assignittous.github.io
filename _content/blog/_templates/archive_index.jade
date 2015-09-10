@@ -1,9 +1,42 @@
-h1 Archive
+html
+  head
+    title AITU Blog
+    
+    include ../../common/template/head/_base.jade
+    include ../../common/template/head/_webfonts.jade
 
+  include ../../common/header_bars/_blog.jade
+  
+  body
+    section.page
+      section.blog-4
+        .container
+          .row
+            .col-sm-8
+              h1 AITU Archives 
+              .archive-periods 
+                each year in years
+                  h3= year.name
+                  ul
+                    each month in year.months
+                      li
+                        a(href="/blog/#{year.name}/#{month.number}.html")= month.name
+                      
+            include ../../blog/_common/_blog_links.jade             
 
-each year in years
-  h1= year.name
-  ul
-    each month in year.months
-      li
-        a(href="/blog/#{year.name}/#{month.number}.html")= month.name
+      include ../../common/_footer.jade    
+      
+      script(src='/_js/jquery-1.10.2.min.js')
+      script(src='/_js/jquery.bxslider.min.js')
+      script(src='/_js/jquery.scrollTo-1.4.3.1-min.js')
+      script(src='/_js/jquery.sharrre.min.js')
+      script(src='/_js/bootstrap.min.js')
+      script(src='/_js/masonry.pkgd.min.js')
+      script(src='/_js/modernizr.custom.js')
+      script(src='/_js/page-transitions.js')
+      script(src='/_js/easing.min.js')
+      script(src='/_js/jquery.svg.js')
+      script(src='/_js/jquery.svganim.js')
+      script(src='/_js/jquery.backgroundvideo.min.js')
+      script(src='/_js/froogaloop.min.js')
+      script(src='/_js/startup-kit.js')              

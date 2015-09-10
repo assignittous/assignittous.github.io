@@ -1,14 +1,28 @@
-header.top-bar.bg-corporate
+header.header-1
   .container
     .row
-      .col-xs-1
-        a(href='/') 
-          i.aitu-logo
-      .col-xs-11
-        nav.pull-right
-          .nav-item.r
-            a.active(href='/') Assign It To Us
-          .nav-item.r
-            a(href='/knodeo') Knodeo
-          .nav-item.r
-            a(href='/assign_it_to_me') Assign It To Me
+      nav.navbar.col-sm-12(role='navigation')
+        .navbar-header
+          button.navbar-toggle(type='button')               
+          a.brand(href='/')
+            img(src='/_assets/icons/aitu-logo-white.png', width='50', height='50', alt='AITU Logo')
+            | AssignItToUs            
+        .collapse.navbar-collapse
+          ul.nav.pull-right
+            li
+              a.active(href='/') AITU                  
+            li
+              a(href='/solutions') SOLUTIONS                 
+            li
+              a(href='/services') SERVICES    
+            li
+              a(href='/blog') BLOG                                 
+          ul.subnav                                 
+            li
+              a(href='/about') About                 
+            li
+              a(href='/contact') Contact Us
+            li
+              a(href='/legal/privacy') Privacy                  
+            li
+              a(href='/legal/terms') Terms

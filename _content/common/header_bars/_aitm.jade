@@ -1,14 +1,19 @@
-header.top-bar.bg-aitm
+header.header-1
   .container
     .row
-      .col-xs-1
-        a(href='/') 
-          i.aitu-logo
-      .col-xs-11
-        nav.pull-right
-          .nav-item.r
-            a(href='/') Assign It To Us
-          .nav-item.r
-            a(href='/knodeo') Knodeo
-          .nav-item.r
-            a.active(href='/assign_it_to_me') Assign It To Me
+      nav.navbar.col-sm-12(role='navigation')
+        button.navbar-toggle(type='button') 
+        .navbar-header                   
+          a.brand(href='http://www.assignittous.com')
+            i.aitu-logo
+            |  AssignItToUs                 
+        .collapse.navbar-collapse
+          ul.nav.pull-right
+            li
+              a(href='/') AITUs                         
+            li
+              a(href='/knodeo') KNODEO                        
+            li
+              a.active(href='/assign_it_to_me') AITMe                         
+            li
+              a(href='#') CONTACT

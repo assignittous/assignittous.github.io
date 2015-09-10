@@ -22,7 +22,6 @@
     "bootstrap": "~3.3.2",
     "html5shiv": "~3.7.2",
     "greensock": "~1.15.1",
-    "vivus": "~0.1.2"
   },
   "overrides": {
     "animate.css": {

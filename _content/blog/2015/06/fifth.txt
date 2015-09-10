@@ -1,5 +1,6 @@
 title: "fifth"
 author: ""
+image: ""
 publish: true
 day: 30
 time: "17:30"

@@ -1,5 +1,6 @@
 title: "First Post"
 author: "Steven Ng"
+image: ""
 publish: true
 day: 1
 time: "17:30"

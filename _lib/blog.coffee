@@ -84,7 +84,7 @@ exports.Blog =
         switch pathElements.length
 
           when 3 # year
-            if !["_templates","_drafts"].any(currentPath)
+            if !["_templates","_drafts","_common"].any(currentPath)
               months = dirs.sort()
               
               months = months.map (o)->

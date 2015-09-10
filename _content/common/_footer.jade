@@ -1,39 +1,51 @@
-footer
-  section.contact
-    .container
-      section.col-sm-8
-        h4 Assign It To Us Technologies
-        p Assign It To Us was founded in 2012 by Vince Iarusci and Steven Ng.
-        p We are technology professionals with several years of experience in the field of business intelligence.
-        p If you're ready to start your project, we're here to help you.       
-      section.col-sm-4
-        h4 Contact Us
-        .contact-info
-          .col-sm-6
-            h5 By Mail
-            p 27 Wheelwright Crescent
-            p Toronto, ON M3N 1V2
-            p Canada
-         .col-sm-6
-            h5 By Phone
-            p 647-629-8986
-            h5 By Email
-            p just@assignittous.com
+footer.footer-1.bg-midnight-blue
+  .container
+    .row
+      .col-sm-5
+        p.lead
+          a.brand(href='#')
+            img(src='/_assets/icons/aitu-logo-white.png', width='30', height='30', alt='AITU Logo')
+            | AssignItToUs    
+        | Assign It To Us was founded in 2012 by Vince Iarusci and Steven Ng. We are technology professionals with several years of experience in the field of business intelligence.<br>
+        | If you're ready to start your project, we're here to help you.                         
+        .social-btns
+          a.social-btn-facebook.sharrre(href='https://www.facebook.com/assignittous', data-text='Make Better Business Decisions! -> Assign It To Us - http://assignittous.com', data-url='https://assignittous.com')
+            .fui-facebook                      
+            .fui-facebook                                    
+          a.social-btn-twitter.sharrre(href='https://twitter.com/assignittous', data-text='Make Better Business Decisions! -> Assign It To Us - http://assignittous.com', data-url='https://assignittous.com')
+            .fui-twitter                      
+            .fui-twitter                
+          a.social-btn-linkedin.sharrre(href='https://www.linkedin.com/company/assign-it-to-us', data-text='Make Better Business Decisions! -> Assign It To Us - http://assignittous.com', data-url='https://assignittous.com')
+            .fui-linkedin                      
+            .fui-linkedin    
 
-  section.bottom-bar
-    
-    .container
-      .col-md-6 &#169; Assign It To Us, 2015
-      .col-md-6
-        
-        nav.pull-right
-        
-         .nav-item.r
-            a(href='/privacy')
-              span Privacy Policy
-          .nav-item.r
-            a(href='/terms')
-              span Terms and Conditions
+      nav
+        .col-sm-2.col-sm-offset-1
+          h6 Categories                  
+          ul
+            li
+              a(href='/about') About Us                        
+            li
+              a(href='/blog') Blog                                               
+            li
+              a(href='/contact') Contact Info
+        .col-sm-2
+          h6 Follow Us                     
+          ul
+            li
+              a(href='https://www.facebook.com/assignittous') Facebook                        
+            li
+              a(href='https://twitter.com/assignittous') Twitter                        
+            li
+              a(href='https://www.linkedin.com/company/assign-it-to-us') LinkedIn           
+      .col-sm-2.buy-btn
+        a.btn.btn-success.btn-block(href='mailto:vince.iarusci@assignittous.com?Subject=Info%20Request%20-%20AITU', target='_top') Contact Us
+       
+    .row
+      .col-sm-5.additional-links
+        a(href='/legal/terms') Terms of Service               
+        a(href='/legal/privacy') Privacy Policy
+
 
   script
     :coffee
@@ -53,9 +65,3 @@ footer
       ) window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'
       ga 'create', 'UA-49357553-1', 'auto'
       ga 'send', 'pageview'
-    
-  
-  script(src="/bower/vivus.js")
-  script
-    :coffee
-      b = new Vivus('a',  {type: 'delayed', duration: 200})

@@ -1,0 +1,142 @@
+/**
+ * Footer 1 stylesheet  
+ *
+
+.footer-1
+  padding-top: 85px
+  padding-bottom: 85px
+  font-size: 14px
+  color: #bdc3c7
+  .lead
+    margin-bottom: 0px
+    margin-top: -10px
+    font-size: 22px
+    font-weight: normal
+    color: #ffffff
+    font-weight: 300
+    letter-spacing: -1px
+    b
+      font-weight: 500
+  .brand
+    font-size: 20px
+    font-weight: normal
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-weight: 300
+    color: #ffffff
+    vertical-align: middle
+    .aitu-logo
+      font-size: 40px
+      vertical-align: middle
+      position: relative;
+      top: -10px;
+  .social-btns
+    white-space: nowrap
+    margin-top: 15px
+    margin-bottom: 15px
+    > *
+      display: inline-block
+      vertical-align: top
+      margin-left: 15px
+      font-size: 20px
+      font-weight: normal
+      color: #979c9f
+      width: 22px
+      height: 25px
+      overflow: hidden
+      text-align: center
+      &:first-child
+        margin-left: 0
+      > *
+        display: block
+        position: relative
+        top: 0
+        -webkit-transition: 0.25s top
+        -moz-transition: 0.25s top
+        -o-transition: 0.25s top
+        transition: 0.25s top
+        &:first-child
+          color: #bdc3c7
+      &:hover > *
+        top: -100%
+  .btn.btn-danger
+    background-color: #c0392b
+    &:hover, &:focus
+      background-color: #cd6155
+    &:active, &.active
+      background-color: #a33025
+  a
+    color: #bdc3c7
+    font-weight: normal
+    &:hover, &:focus, &.active
+      color: #979c9f
+  nav
+    h6
+      margin: 0 0 20px
+      font-size: 16px
+      font-weight: normal
+      color: #ffffff
+      line-height: 16px
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+      text-transform: none
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+      font-size: 16px
+      font-weight: normal
+      color: #bdc3c7
+      li
+        margin-bottom: 5px
+  .buy-btn
+    text-align: center
+    a.btn
+      font-size: 15px
+      font-weight: normal
+      color: #ffffff
+    .btn
+      margin-bottom: 17px
+  .additional-links
+    border-top: 1px solid #374859
+    padding-top: 17px
+    font-size: 14px
+    font-weight: normal
+    color: #95a5a6
+    a
+      margin-right: 10px
+      color: #95a5a6
+      &:hover, &:focus, &.active
+        color: #778485
+  .fb_iframe_widget
+    vertical-align: top
+
+@media (max-width: 767px)
+  .footer-1 .additional-links
+    margin-top: 17px
+    margin-bottom: 0
+
+@media (max-width: 767px)
+  .footer-1
+    .col-sm-6
+      margin-bottom: 20px
+    nav .col-sm-2, .buy-btn
+      float: left
+      width: 30%
+      margin-left: 5%
+    nav .col-sm-2:first-child
+      margin-left: 0
+
+@media (max-width: 480px)
+  .footer-1
+    padding-top: 35px
+    padding-bottom: 35px
+    .buy-btn
+      float: none
+      clear: both
+      width: auto
+      padding-top: 15px
+      margin: 0
+      .btn
+        margin: 0 0 10px
+    nav .col-sm-2
+      width: 47%
+      margin-left: 6%

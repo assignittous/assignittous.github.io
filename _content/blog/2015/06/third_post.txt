@@ -1,5 +1,5 @@
 title: "third"
-author: ""
+author: ""image: ""
 publish: true
 day: 6
 time: "17:30"

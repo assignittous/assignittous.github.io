@@ -11,7 +11,7 @@
 blog = require("../_lib/blog").Blog
 
 sourcePath = ["./_content/blog/**/*.txt","./_content/blog/_templates/*.jade", "!./_content/blog/_drafts/*.txt"]
-outputPath = "./blog/"
+outputPath = "./"
 
 module.exports = ()->
 

@@ -1,11 +1,10 @@
 title: "Come On Steven!!!"
 author: "Vince Iarusci"
+image: ""
 publish: true
 day: 30
 time: "15:30"
 ---abstract
 Markdown content goes here
 ---body
-## Come On Steven!!!
-
 Noticed that I used 3 !!! just like all the high school girls do.

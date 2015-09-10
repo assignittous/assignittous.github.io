@@ -1,0 +1,11 @@
+h1 
+  a(href="/blog/archive.html") Archive
+  | &nbsp;For #{monthName} #{year}
+
+each entry in entries
+  article
+    h1
+      a(href=entry.permalink)=entry.title
+    p= entry.post_at
+    p= entry.author
+    != entry.abstract

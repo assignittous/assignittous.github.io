@@ -1,9 +1,14 @@
 title: "Welcome"
 author: "Vince Iarusci"
+image: "/_assets/images/blog/knodeo4.png"
 publish: true
 day: 3
 time: "17:30"
 ---abstract
-Markdown content goes here
+We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+
+**We have considered** your needs in developing the html version of our UI Kit, which contains.
+
+We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
 ---body
-Markdown *content* goes here
+We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers

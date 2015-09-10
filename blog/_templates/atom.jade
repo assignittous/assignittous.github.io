@@ -1,0 +1,20 @@
+feed(xmlns="http://www.w3.org/2005/Atom")
+  title Assign It To Us Blog Feed
+    subtitle Assign It To Us Blog
+    link(href="http://assignittous.com/blog/atom.xml", rel="self")
+    link(href="http://assignittous.com/")
+    updated=updated
+
+    each entry in entries
+      entry
+        title=entry.title
+        link(href=entry.permalink)
+        id=entry.id
+        updated=entry.publish_date
+        summary != entry.abstract
+        content(type="xhtml")
+          div(xmlns="http://www.w3.org/1999/xhtml")
+            != entry.body
+        author
+          name=entry.author
+
