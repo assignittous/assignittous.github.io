@@ -7,14 +7,21 @@ header.header-1
             a.brand(href='http://www.assignittous.com')
               i.aitu-logo
               |  AssignItToUs               
-        .collapse.navbar-collapse
+        #navbar-collapse-01.collapse.navbar-collapse
           ul.nav.pull-right
             li
-              a(href='/') AITU                  
+              a(href='/') AITU                                     
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | SERVICES                 
+              span.dropdown-arrow                   
+              ul.dropdown-menu
+                li
+                  a(href='#') Knodeo                    
+                li
+                  a(href='#') Cognos                                         
             li
-              a.active(href='/solutions') SOLUTIONS                 
-            li
-              a(href='/services') SERVICES    
+              a.active(href='/solutions') SOLUTIONS
             li
               a(href='/blog') BLOG                                 
           ul.subnav                                 
@@ -26,3 +33,4 @@ header.header-1
               a(href='/legal/privacy') Privacy                   
             li
               a(href='/legal/terms') Terms       
+                        

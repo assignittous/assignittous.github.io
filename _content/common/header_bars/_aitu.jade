@@ -1,28 +1,54 @@
 header.header-1
   .container
     .row
-      nav.navbar.col-sm-12(role='navigation')
+      .navbar.col-sm-12.navbar-fixed-top(role='navigation')
         .navbar-header
-          button.navbar-toggle(type='button')               
-          a.brand(href='/')
-            img(src='/_assets/icons/aitu-logo-white.png', width='50', height='50', alt='AITU Logo')
-            | AssignItToUs            
-        .collapse.navbar-collapse
+          button.navbar-toggle(type='button')         
+          a.brand(href='http://www.assignittous.com')
+            i.aitu-logo
+            |  AssignItToUs
+        #navbar-collapse-01.collapse.navbar-collapse
           ul.nav.pull-right
             li
-              a.active(href='/') AITU                  
+              a(href='/') AITU
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | SERVICES
+              span.dropdown-arrow
+              ul.dropdown-menu
+                li
+                  a(href='/knodeo') Knodeo
+                li
+                  a(href='cognos') Cognos
+              ul.subnav
+                li
+                  a(href='/about')  - Knodeo
+                li
+                  a(href='/contact') - Cognos    
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | SOLUTIONS
+              span.dropdown-arrow
+              ul.dropdown-menu
+                li
+                  a(href='/knodeo') Business Analytics
+                li
+                  a(href='cognos') Project Management
+              ul.subnav
+                li
+                  a(href='/about')  - Business Analytics
+                li
+                  a(href='/contact') - Project Management    
             li
-              a(href='/solutions') SOLUTIONS                 
+              a(href='/blog') BLOG
+
+          ul.subnav
             li
-              a(href='/services') SERVICES    
-            li
-              a(href='/blog') BLOG                                 
-          ul.subnav                                 
-            li
-              a(href='/about') About                 
+              a(href='/about') About
             li
               a(href='/contact') Contact Us
             li
-              a(href='/legal/privacy') Privacy                  
+              a(href='/legal/privacy') Privacy
             li
               a(href='/legal/terms') Terms
+
