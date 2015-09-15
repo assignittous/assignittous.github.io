@@ -1,7 +1,7 @@
 header.header-1
   .container
     .row
-      .navbar.col-sm-12.navbar-fixed-top(role='navigation')
+      nav.navbar.col-sm-12.navbar-fixed-top(role='navigation')
         .navbar-header
           button.navbar-toggle(type='button')         
           a.brand(href='http://www.assignittous.com')
@@ -14,31 +14,29 @@ header.header-1
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown')
                 | SERVICES
-              span.dropdown-arrow
               ul.dropdown-menu
                 li
-                  a(href='/knodeo') Knodeo
+                  a(href='/knodeo') Knodeo Analytics
                 li
-                  a(href='cognos') Cognos
+                  a(href='/ibm_cognos') IBM Cognos
               ul.subnav
                 li
-                  a(href='/about')  - Knodeo
+                  a(href='/knodeo')  - Knodeo Analytics
                 li
-                  a(href='/contact') - Cognos    
+                  a(href='/ibm_cognos') - IBM Cognos    
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown')
                 | SOLUTIONS
-              span.dropdown-arrow
               ul.dropdown-menu
                 li
-                  a(href='/knodeo') Business Analytics
+                  a(href='/business_analytics') Business Analytics
                 li
-                  a(href='cognos') Project Management
+                  a(href='/project_management') Project Management
               ul.subnav
                 li
-                  a(href='/about')  - Business Analytics
+                  a(href='/business_analytics')  - Business Analytics
                 li
-                  a(href='/contact') - Project Management    
+                  a(href='/project_management') - Project Management    
             li
               a(href='/blog') BLOG
 
@@ -51,4 +49,3 @@ header.header-1
               a(href='/legal/privacy') Privacy
             li
               a(href='/legal/terms') Terms
-
