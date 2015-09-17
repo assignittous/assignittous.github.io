@@ -5,10 +5,11 @@ publish: true
 day: 3
 time: "17:30"
 ---abstract
-We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
+Welcome to the Assign It To Me blog.
 
-**We have considered** your needs in developing the html version of our UI Kit, which contains.
+Check back soon for new articles.
 
-We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.
 ---body
-We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers
+Welcome to the Assign It To Me blog.
+
+Check back soon for new articles.

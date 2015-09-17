@@ -4,7 +4,7 @@
     <subtitle>Assign It To Us Blog</subtitle>
     <link href="http://assignittous.com/blog/atom.xml" rel="self"/>
     <link href="http://assignittous.com/"/>
-    <updated>2015-09-17T15:24:05.280Z</updated>
+    <updated>2015-09-17T15:52:10.404Z</updated>
     <entry>
       <title>Welcome</title>
       <link href="/blog/2015/08/welcome.html"/>
@@ -12,81 +12,11 @@
       <updated>2015-08-03T21:30:00.000Z</updated>
       <summary>!= entry.abstract</summary>
       <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml"><p>We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers</p>
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>Welcome to the Assign It To Me blog.</p><p>Check back soon for new articles.</p>
         </div>
       </content>
       <author>
         <name>Vince Iarusci</name>
-      </author>
-    </entry>
-    <entry>
-      <title>fifth</title>
-      <link href="/blog/2015/06/fifth.html"/>
-      <id>bff1ebed02f355abea51b4eacb8a0f5b</id>
-      <updated>2015-06-30T21:30:00.000Z</updated>
-      <summary>!= entry.abstract</summary>
-      <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml"><p>Markdown content goes here</p>
-        </div>
-      </content>
-      <author>
-        <name></name>
-      </author>
-    </entry>
-    <entry>
-      <title>Come On Steven!!!</title>
-      <link href="/blog/2015/06/come_on_steven.html"/>
-      <id>0506c226115dc90ae9ec552697d35cde</id>
-      <updated>2015-06-30T19:30:00.000Z</updated>
-      <summary>!= entry.abstract</summary>
-      <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml"><p>Noticed that I used 3 !!! just like all the high school girls do.</p>
-        </div>
-      </content>
-      <author>
-        <name>Vince Iarusci</name>
-      </author>
-    </entry>
-    <entry>
-      <title>fourth</title>
-      <link href="/blog/2015/06/fourth.html"/>
-      <id>c6b5ef843f0a3c60d4c29d0cbebe72c0</id>
-      <updated>2015-06-08T21:30:00.000Z</updated>
-      <summary>!= entry.abstract</summary>
-      <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml"><p>Markdown content goes here</p>
-        </div>
-      </content>
-      <author>
-        <name></name>
-      </author>
-    </entry>
-    <entry>
-      <title>secondi</title>
-      <link href="/blog/2015/06/second_post.html"/>
-      <id>e18685808cc70a7272b4d539df7d6c61</id>
-      <updated>2015-06-04T21:30:00.000Z</updated>
-      <summary>!= entry.abstract</summary>
-      <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml"><p>Markdown content goes here</p>
-        </div>
-      </content>
-      <author>
-        <name></name>
-      </author>
-    </entry>
-    <entry>
-      <title>First Post</title>
-      <link href="/blog/2015/06/first_post.html"/>
-      <id>c4efb86194648e4c182541b41453190e</id>
-      <updated>2015-06-01T21:30:00.000Z</updated>
-      <summary>!= entry.abstract</summary>
-      <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml"><p>test post</p>
-        </div>
-      </content>
-      <author>
-        <name>Steven Ng</name>
       </author>
     </entry>
   </title>
