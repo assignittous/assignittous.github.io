@@ -36,6 +36,7 @@ module.exports = ()->
 title: "#{stamp}"
 author: ""
 publish: true
+image: "/_assets/images/blog/<image>.png"
 day: #{day}
 time: "17:30"
 ---abstract
