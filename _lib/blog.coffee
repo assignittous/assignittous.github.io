@@ -45,7 +45,7 @@ exports.Blog =
     text = file.open filePath
     csonEnd = text.indexOf('---')
     if csonEnd < 0
-      csonEnd = text.length()
+      csonEnd = text.length
 
     # Parse the CSON portion
     obj = CSON.parse text.substring(0,csonEnd)
