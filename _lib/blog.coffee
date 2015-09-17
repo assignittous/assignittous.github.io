@@ -50,8 +50,8 @@ exports.Blog =
     # Parse the CSON portion
     obj = CSON.parse text.substring(0,csonEnd)
     # Add markdown content as attributes
-    obj["body"] = @parseMarkdown @findElement("---body","---abstract",text)
-    obj["abstract"] = @parseMarkdown @findElement("---abstract","---body",text)
+    obj["body"] = @parseMarkdown @findElement("---abstract","---body",text)
+    obj["abstract"] = @parseMarkdown @findElement("---body","---abstract",text)
 
     return obj
 

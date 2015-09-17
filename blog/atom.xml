@@ -4,7 +4,7 @@
     <subtitle>Assign It To Us Blog</subtitle>
     <link href="http://assignittous.com/blog/atom.xml" rel="self"/>
     <link href="http://assignittous.com/"/>
-    <updated>2015-09-17T15:22:41.148Z</updated>
+    <updated>2015-09-17T15:24:05.280Z</updated>
     <entry>
       <title>Welcome</title>
       <link href="/blog/2015/08/welcome.html"/>
@@ -12,7 +12,7 @@
       <updated>2015-08-03T21:30:00.000Z</updated>
       <summary>!= entry.abstract</summary>
       <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml"><p>We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p><p><strong>We have considered</strong> your needs in developing the html version of our UI Kit, which contains.</p><p>We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers.</p>
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>We have a great surprise for Designmodo fans ? our first free HTML user interface kit. Flat UI Free is made on the basis of Twitter Bootstrap in a stunning flat-style, and the kit also includes a PSD version for designers</p>
         </div>
       </content>
       <author>
@@ -40,7 +40,7 @@
       <updated>2015-06-30T19:30:00.000Z</updated>
       <summary>!= entry.abstract</summary>
       <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml"><p>Markdown content goes here</p>
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>Noticed that I used 3 !!! just like all the high school girls do.</p>
         </div>
       </content>
       <author>
@@ -82,7 +82,7 @@
       <updated>2015-06-01T21:30:00.000Z</updated>
       <summary>!= entry.abstract</summary>
       <content type="xhtml">
-        <div xmlns="http://www.w3.org/1999/xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml"><p>test post</p>
         </div>
       </content>
       <author>
