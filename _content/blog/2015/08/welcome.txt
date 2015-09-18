@@ -87,7 +87,7 @@ Many of today's technologies used are open and extensible. Businesses change dai
 
 ##### Relief for Users
 #### Trusted Information
-Business rules are built into a common information backbone. Business definitions are goverened by the datawarehouse instead of the individual BI tools.
+Business rules are built into a common information backbone. Business definitions are goverened by the analytics database instead of the individual BI tools.
 
 #### Use established familiar tools
 Users are already familiar with tools like MS Excel for reporting or MS Access for queries. Knodeo can integrate with any existing BI tool.
