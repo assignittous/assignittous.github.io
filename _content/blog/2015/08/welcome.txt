@@ -1,15 +1,106 @@
-title: "Welcome"
+title: "Enterprise BI Can be Hard"
 author: "Vince Iarusci"
-image: "/_assets/images/blog/knodeo4.png"
+image: "/_assets/images/blog/<image>.png"
 publish: true
 day: 3
 time: "17:30"
 ---abstract
-Welcome to the Assign It To Me blog.
+##### A look at common Enterprise BI pains for midsize companies
 
-Check back soon for new articles.
+We've seen it happen many times. A customer is sitting through a polished demo of some [commercial-of-the-shelf](https://en.wikipedia.org/wiki/Commercial_off-the-shelf) product from one of the 
+big BI vendors.  Screen after screen of perfect dashboards and reports with perfect data flash by.  All the while, the customer is thinking that this will solve all their decision problems while 
+the salesperson is thinking about closing the sale. In most cases, these customers are walking into a world of hurt.
 
 ---body
-Welcome to the Assign It To Me blog.
+We've seen it happen many times. A customer is sitting through a polished demo of some [commercial-of-the-shelf](https://en.wikipedia.org/wiki/Commercial_off-the-shelf) product from one of the 
+big BI vendors.  Screen after screen of perfect dashboards and reports with perfect data flash by.  All the while, the customer is thinking that this will solve all their decision problems while 
+the salesperson is thinking about closing the sale. In most cases, these customers are walking into a world of hurt.
 
-Check back soon for new articles.
+I'm not saying that big BI vendors are evil, they just have their place.  Steven and I have sold and implemented commercial-off-the-shelf software to many companies and I still use it everyday with my customers.
+ These BI stacks may work well in larger organizations with big IT budgets and resources but enterprise BI can be hard for most small to midsize companies. In many cases it's like trying to "crack a peanut with a sledghammer".
+
+Let's take a look at the BI pains experienced by different users in an organization.
+
+##### Pains for C Level Executives
+#### High Costs
+Current BI vendors make money selling software which is feature rich & over engineered. Licensing is complex. 
+Enterprise business intelligence vendors make their money selling you solutions with features you don't need and require significant effort to customize to your particular business problems.
+ Licensing fees are often complex and arbitrary, and have significant annual maintenance costs as well.
+ 
+#### Esoteric Skill Sets
+Specialized skills are required for content development. Skilled-up developers often move to greener pastures and 
+the market for talent in any given enterprise business intelligence product is typically limited to the people who have had access to them. 
+This creates an artificial scarcity that drives up prices. When your own people are "skilled up", their market value increases, which can lead to increased turnover and high replacement costs.
+
+#### Shelfware - Adoption of technology
+Most BI vendors have many embedded tools, features & options that show well during the sales cycle but are often not used after implementation. 
+In order to satisfy a broad set of the buyer's checklist, many business intelligence vendors focus on feature abundance over feature excellence. 
+More often than not, any solution you buy uses only 20% of a product's functionality, in spite of paying for 100% of a product.
+
+##### Pains for Users
+#### Inconsistent information
+A common mistake is that users rely on the front end BI tools to define the business rules instead of a centralized information backbone.
+ 
+#### Multiple Versions of the Truth
+In spite of the "Single Version of the Truth" benefit of business intelligence solutions, the reality is that it is difficult to achieve. 
+Part of the problem lies with the fact that there is a lot of leeway in how a solution is implemented. Improperly implemented solutions scatter 
+multiple versions of the same business logic across multiple layers of the solution, eliminating any possibility that a "Single Version of the Truth" can be achieved.
+
+#### Learn new complex tools
+Users are forced to navigate & learn complex software. Users just want the information they need in the tools they already use. 
+Enterprise software is notorious for being user-unfriendly. Part of the problem is that the designers and developers rarely use the software themselves. 
+Forcing users to navigate and learn complex software costs your company money, and increases the stress levels of your team members.
+
+#### Forced to use standard tools
+Different users have different information needs. Out fo the box query, reporting, analytics and dashboard tools restrict the user's delivery options.
+
+#### Limited Functionality
+Different users have different information needs. Out of the box functionality of enterprise business intelligence tools can make or break your company's implementation. 
+When looking for new features, users are often beholden to the release schedules and feature prioritization of their enterprise software vendors.
+
+##### Pains for Developers
+#### Specialized knowledge required
+IT managers and developers don't want one more complex tool to manage.
+
+#### One More Tool
+Most IT departments are already busy, and adding one more tool to the mix simply adds more complexity and work. 
+While most enterprise solutions are built on the same underlying principles (moving data and querying databases), each has their own way of doing things. Ultimately that leads to increased training, development and maintenance costs.
+
+#### Constrains during development
+Customizing packaged software can be like "stuffing a square block in a round hole".  Proprietary software is "locked down" and makes it difficult for the developer to customize development.
+
+#### Software administration is hard
+BI vendors make money with version support changes and licencing. Upgrading and migrating content between versions can be difficult and time consuming.
+
+
+##### Knodeo pain relief
+
+##### Relief for C Level Executives
+#### Reduced Costs
+Knodeo software costs are $0. Knodeo is built on open source software and the Knodeo base components have no software costs. 
+
+#### Commodity skill sets
+Many of the technologies used already exist within most companies. Using common technology makes it easier for the business to find the needed skill sets.
+
+#### Adapts to your business
+Many of today's technologies used are open and extensible. Businesses change daily and Knodeo's tools adapt to your business without the constraints of proprietary software.
+
+##### Relief for Users
+#### Trusted Information
+Business rules are built into a common information backbone. Business definitions are goverened by the datawarehouse instead of the individual BI tools.
+
+#### Use established familiar tools
+Users are already familiar with tools like MS Excel for reporting or MS Access for queries. Knodeo can integrate with any existing BI tool.
+
+#### Customized reporting
+Create customized reports, analytics and dashboards in the open Knodeo Launchpad. Develop apps to help with your business processes.
+
+##### Relief for Developers
+#### Unlimited toolsets to support business needs
+Developers have options to select the toolsets that fit best for the required business case.
+
+#### Open Extensible architecture
+Open architecture gives developers the freedom to implement solutions based on the user requirements and not the constraints of proprietary software.
+
+#### Automated systems
+Tasks like installations, upgrades, data loads and report delivery can all be executed using the open Knodeo automation tools.
