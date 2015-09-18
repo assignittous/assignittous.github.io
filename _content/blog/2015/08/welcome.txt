@@ -73,7 +73,7 @@ Customizing packaged software can be like "stuffing a square block in a round ho
 BI vendors make money with version support changes and licencing. Upgrading and migrating content between versions can be difficult and time consuming.
 
 
-##### Knodeo pain relief
+##### Pain relief with Knodeo
 
 ##### Relief for C Level Executives
 #### Reduced Costs
