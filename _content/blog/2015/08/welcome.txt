@@ -52,7 +52,7 @@ Enterprise software is notorious for being user-unfriendly. Part of the problem 
 Forcing users to navigate and learn complex software costs your company money, and increases the stress levels of your team members.
 
 #### Forced to use standard tools
-Different users have different information needs. Out fo the box query, reporting, analytics and dashboard tools restrict the user's delivery options.
+Different users have different information needs. Out of the box query, reporting, analytics and dashboard tools restrict the user's delivery options.
 
 #### Limited Functionality
 Different users have different information needs. Out of the box functionality of enterprise business intelligence tools can make or break your company's implementation. 
