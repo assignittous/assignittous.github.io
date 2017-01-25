@@ -812,7 +812,7 @@ input {
       -webkit-appearance: none; }
 
 fieldset {
-  padding: 0.35em 0.625em 0.75em;
+  padding: .35em .625em .75em;
   margin: 0 2px;
   border: 1px solid #c0c0c0; }
 
@@ -940,8 +940,8 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
 
 .img-circle {
   border-radius: 50%; }
@@ -1934,8 +1934,8 @@ output {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
   .form-control:focus {
     border-color: #66afe9;
     outline: 0;
@@ -2664,8 +2664,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear; }
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear; }
   .fade.in {
     opacity: 1; }
 
@@ -2678,8 +2678,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-  transition: height 0.35s ease; }
+  -webkit-transition: height .35s ease;
+  transition: height .35s ease; }
 
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -4382,7 +4382,7 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
 
 .label {
   display: inline;
-  padding: 0.2em 0.6em 0.3em;
+  padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
@@ -4508,8 +4508,8 @@ a.list-group-item.active > .badge {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
   .thumbnail > img, .thumbnail a > img {
     display: block;
     max-width: 100%;
@@ -4615,8 +4615,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   background-color: #428bca;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width 0.6s ease;
-  transition: width 0.6s ease; }
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease; }
 
 .progress-striped .progress-bar {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5053,10 +5053,10 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0; }
   .modal.fade .modal-dialog {
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    -moz-transition: -moz-transform 0.3s ease-out;
-    -o-transition: -o-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -moz-transition: -moz-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
     -webkit-transform: translate(0, -25%);
     -ms-transform: translate(0, -25%);
     transform: translate(0, -25%); }
@@ -6105,8 +6105,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   border-radius: 4px;
   padding: 10px 15px;
   -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
-  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear; }
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear; }
   .btn:hover, .btn:focus {
     outline: none;
     color: #ffffff; }
@@ -6845,8 +6845,8 @@ label {
   border-radius: 6px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
-  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear; }
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear; }
   .form-control:-moz-placeholder {
     color: #b2bcc5; }
   .form-control::-moz-placeholder {
@@ -7147,8 +7147,8 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
   background-color: #bdc3c7;
   border: 1px solid #bdc3c7;
   border-radius: 6px;
-  -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
-  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear; }
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear; }
 
 .input-group-hg .input-group-addon, .input-group-lg .input-group-addon, .input-group-sm .input-group-addon {
   line-height: 1; }
@@ -8312,8 +8312,8 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
     border-radius: 6px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
-    transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear; }
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+    transition: border .25s linear, color .25s linear, background-color .25s linear; }
   .twitter-typeahead .tt-query:-moz-placeholder, .twitter-typeahead .tt-hint:-moz-placeholder {
     color: #b2bcc5; }
   .twitter-typeahead .tt-query::-moz-placeholder, .twitter-typeahead .tt-hint::-moz-placeholder {
@@ -8586,14 +8586,14 @@ fieldset[disabled] .twitter-typeahead .tt-query, fieldset[disabled] .twitter-typ
         min-height: 16px;
         padding: 0 4px;
         border-radius: 50px;
-        -webkit-transition: background 0.2s ease-out, border-color 0s ease-out, color 0.2s ease-out;
-        transition: background 0.2s ease-out, border-color 0s ease-out, color 0.2s ease-out; }
+        -webkit-transition: background .2s ease-out, border-color 0s ease-out, color .2s ease-out;
+        transition: background .2s ease-out, border-color 0s ease-out, color .2s ease-out; }
       .pagination ul li > a:hover, .pagination ul li > span:hover, .pagination ul li > a:focus, .pagination ul li > span:focus {
         background-color: #1abc9c;
         border-color: #1abc9c;
         color: #ffffff;
-        -webkit-transition: background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
-        transition: background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out; }
+        -webkit-transition: background .2s ease-out, border-color .2s ease-out, color .2s ease-out;
+        transition: background .2s ease-out, border-color .2s ease-out, color .2s ease-out; }
       .pagination ul li > a:active, .pagination ul li > span:active {
         background-color: #16a085;
         border-color: #16a085; }
@@ -9118,7 +9118,7 @@ fieldset[disabled] .twitter-typeahead .tt-query, fieldset[disabled] .twitter-typ
   font-size: 20px;
   margin: 0; }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
   .tile.tile-hot:before {
     background-image: url(/_assets/images/tile/ribbon-2x.png); } }
 
@@ -9207,7 +9207,7 @@ input.todo-search-field {
   font-size: 17px;
   margin: 1px 0 3px; }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
   .todo li {
     background-image: url(/_assets/images/todo/todo-2x.png); }
     .todo li.todo-done {
@@ -9295,8 +9295,8 @@ body.vjs-full-window {
 .vjs-fade-in {
   visibility: visible !important;
   opacity: 1 !important;
-  -webkit-transition: visibility 0s linear 0s, opacity 0.3s linear;
-  transition: visibility 0s linear 0s, opacity 0.3s linear; }
+  -webkit-transition: visibility 0s linear 0s, opacity .3s linear;
+  transition: visibility 0s linear 0s, opacity .3s linear; }
 
 .vjs-fade-out {
   visibility: hidden !important;
@@ -9363,8 +9363,8 @@ body.vjs-full-window {
       top: 50%;
       left: 50%;
       margin: -0.55em 0 0 -0.5em;
-      -webkit-transition: color 0.25s, opacity 0.25s;
-      transition: color 0.25s, opacity 0.25s; }
+      -webkit-transition: color .25s, opacity .25s;
+      transition: color .25s, opacity .25s; }
     .vjs-play-control div:after {
       position: absolute;
       font-family: "Flat-UI-Icons";
@@ -9373,8 +9373,8 @@ body.vjs-full-window {
       top: 50%;
       left: 50%;
       margin: -0.55em 0 0 -0.5em;
-      -webkit-transition: color 0.25s, opacity 0.25s;
-      transition: color 0.25s, opacity 0.25s;
+      -webkit-transition: color .25s, opacity .25s;
+      transition: color .25s, opacity .25s;
       content: "\e03b"; }
     .vjs-play-control div:before {
       content: "\e03c"; }
@@ -9709,7 +9709,7 @@ body.vjs-full-window {
   margin-top: 15px;
   text-align: center; }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
   .login {
     background-image: url(/_assets/images/login/imac-2x.png); } }
 
@@ -10200,122 +10200,122 @@ footer {
 /* animation sets */
 /* move from / to */
 .pt-page-moveToLeft {
-  -webkit-animation: moveToLeft 0.6s ease both;
-  -moz-animation: moveToLeft 0.6s ease both;
-  animation: moveToLeft 0.6s ease both; }
+  -webkit-animation: moveToLeft .6s ease both;
+  -moz-animation: moveToLeft .6s ease both;
+  animation: moveToLeft .6s ease both; }
 
 .pt-page-moveFromLeft {
-  -webkit-animation: moveFromLeft 0.6s ease both;
-  -moz-animation: moveFromLeft 0.6s ease both;
-  animation: moveFromLeft 0.6s ease both; }
+  -webkit-animation: moveFromLeft .6s ease both;
+  -moz-animation: moveFromLeft .6s ease both;
+  animation: moveFromLeft .6s ease both; }
 
 .pt-page-moveToRight {
-  -webkit-animation: moveToRight 0.6s ease both;
-  -moz-animation: moveToRight 0.6s ease both;
-  animation: moveToRight 0.6s ease both; }
+  -webkit-animation: moveToRight .6s ease both;
+  -moz-animation: moveToRight .6s ease both;
+  animation: moveToRight .6s ease both; }
 
 .pt-page-moveFromRight {
-  -webkit-animation: moveFromRight 0.6s ease both;
-  -moz-animation: moveFromRight 0.6s ease both;
-  animation: moveFromRight 0.6s ease both; }
+  -webkit-animation: moveFromRight .6s ease both;
+  -moz-animation: moveFromRight .6s ease both;
+  animation: moveFromRight .6s ease both; }
 
 .pt-page-moveToTop {
-  -webkit-animation: moveToTop 0.6s ease both;
-  -moz-animation: moveToTop 0.6s ease both;
-  animation: moveToTop 0.6s ease both; }
+  -webkit-animation: moveToTop .6s ease both;
+  -moz-animation: moveToTop .6s ease both;
+  animation: moveToTop .6s ease both; }
 
 .pt-page-moveFromTop {
-  -webkit-animation: moveFromTop 0.6s ease both;
-  -moz-animation: moveFromTop 0.6s ease both;
-  animation: moveFromTop 0.6s ease both; }
+  -webkit-animation: moveFromTop .6s ease both;
+  -moz-animation: moveFromTop .6s ease both;
+  animation: moveFromTop .6s ease both; }
 
 .pt-page-moveToBottom {
-  -webkit-animation: moveToBottom 0.6s ease both;
-  -moz-animation: moveToBottom 0.6s ease both;
-  animation: moveToBottom 0.6s ease both; }
+  -webkit-animation: moveToBottom .6s ease both;
+  -moz-animation: moveToBottom .6s ease both;
+  animation: moveToBottom .6s ease both; }
 
 .pt-page-moveFromBottom {
-  -webkit-animation: moveFromBottom 0.6s ease both;
-  -moz-animation: moveFromBottom 0.6s ease both;
-  animation: moveFromBottom 0.6s ease both; }
+  -webkit-animation: moveFromBottom .6s ease both;
+  -moz-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both; }
 
 /* fade */
 .pt-page-fade {
-  -webkit-animation: fade 0.7s ease both;
-  -moz-animation: fade 0.7s ease both;
-  animation: fade 0.7s ease both; }
+  -webkit-animation: fade .7s ease both;
+  -moz-animation: fade .7s ease both;
+  animation: fade .7s ease both; }
 
 .pt-page-fade-in {
-  -webkit-animation: fade-in 0.8s ease both;
-  -moz-animation: fade-in 0.8s ease both;
-  animation: fade-in 0.8s ease both; }
+  -webkit-animation: fade-in .8s ease both;
+  -moz-animation: fade-in .8s ease both;
+  animation: fade-in .8s ease both; }
 
 .pt-page-fade-out {
-  -webkit-animation: fade-out 0.5s ease both;
-  -moz-animation: fade-out 0.5s ease both;
-  animation: fade-out 0.5s ease both; }
+  -webkit-animation: fade-out .5s ease both;
+  -moz-animation: fade-out .5s ease both;
+  animation: fade-out .5s ease both; }
 
 /* move from / to and fade */
 .pt-page-moveToLeftFade {
-  -webkit-animation: moveToLeftFade 0.7s ease both;
-  -moz-animation: moveToLeftFade 0.7s ease both;
-  animation: moveToLeftFade 0.7s ease both; }
+  -webkit-animation: moveToLeftFade .7s ease both;
+  -moz-animation: moveToLeftFade .7s ease both;
+  animation: moveToLeftFade .7s ease both; }
 
 .pt-page-moveFromLeftFade {
-  -webkit-animation: moveFromLeftFade 0.7s ease both;
-  -moz-animation: moveFromLeftFade 0.7s ease both;
-  animation: moveFromLeftFade 0.7s ease both; }
+  -webkit-animation: moveFromLeftFade .7s ease both;
+  -moz-animation: moveFromLeftFade .7s ease both;
+  animation: moveFromLeftFade .7s ease both; }
 
 .pt-page-moveToRightFade {
-  -webkit-animation: moveToRightFade 0.7s ease both;
-  -moz-animation: moveToRightFade 0.7s ease both;
-  animation: moveToRightFade 0.7s ease both; }
+  -webkit-animation: moveToRightFade .7s ease both;
+  -moz-animation: moveToRightFade .7s ease both;
+  animation: moveToRightFade .7s ease both; }
 
 .pt-page-moveFromRightFade {
-  -webkit-animation: moveFromRightFade 0.7s ease both;
-  -moz-animation: moveFromRightFade 0.7s ease both;
-  animation: moveFromRightFade 0.7s ease both; }
+  -webkit-animation: moveFromRightFade .7s ease both;
+  -moz-animation: moveFromRightFade .7s ease both;
+  animation: moveFromRightFade .7s ease both; }
 
 .pt-page-moveToTopFade {
-  -webkit-animation: moveToTopFade 0.7s ease both;
-  -moz-animation: moveToTopFade 0.7s ease both;
-  animation: moveToTopFade 0.7s ease both; }
+  -webkit-animation: moveToTopFade .7s ease both;
+  -moz-animation: moveToTopFade .7s ease both;
+  animation: moveToTopFade .7s ease both; }
 
 .pt-page-moveFromTopFade {
-  -webkit-animation: moveFromTopFade 0.7s ease both;
-  -moz-animation: moveFromTopFade 0.7s ease both;
-  animation: moveFromTopFade 0.7s ease both; }
+  -webkit-animation: moveFromTopFade .7s ease both;
+  -moz-animation: moveFromTopFade .7s ease both;
+  animation: moveFromTopFade .7s ease both; }
 
 .pt-page-moveToBottomFade {
-  -webkit-animation: moveToBottomFade 0.7s ease both;
-  -moz-animation: moveToBottomFade 0.7s ease both;
-  animation: moveToBottomFade 0.7s ease both; }
+  -webkit-animation: moveToBottomFade .7s ease both;
+  -moz-animation: moveToBottomFade .7s ease both;
+  animation: moveToBottomFade .7s ease both; }
 
 .pt-page-moveFromBottomFade {
-  -webkit-animation: moveFromBottomFade 0.7s ease both;
-  -moz-animation: moveFromBottomFade 0.7s ease both;
-  animation: moveFromBottomFade 0.7s ease both; }
+  -webkit-animation: moveFromBottomFade .7s ease both;
+  -moz-animation: moveFromBottomFade .7s ease both;
+  animation: moveFromBottomFade .7s ease both; }
 
 /* move to with different easing */
 .pt-page-moveToLeftEasing {
-  -webkit-animation: moveToLeft 0.7s ease-in-out both;
-  -moz-animation: moveToLeft 0.7s ease-in-out both;
-  animation: moveToLeft 0.7s ease-in-out both; }
+  -webkit-animation: moveToLeft .7s ease-in-out both;
+  -moz-animation: moveToLeft .7s ease-in-out both;
+  animation: moveToLeft .7s ease-in-out both; }
 
 .pt-page-moveToRightEasing {
-  -webkit-animation: moveToRight 0.7s ease-in-out both;
-  -moz-animation: moveToRight 0.7s ease-in-out both;
-  animation: moveToRight 0.7s ease-in-out both; }
+  -webkit-animation: moveToRight .7s ease-in-out both;
+  -moz-animation: moveToRight .7s ease-in-out both;
+  animation: moveToRight .7s ease-in-out both; }
 
 .pt-page-moveToTopEasing {
-  -webkit-animation: moveToTop 0.7s ease-in-out both;
-  -moz-animation: moveToTop 0.7s ease-in-out both;
-  animation: moveToTop 0.7s ease-in-out both; }
+  -webkit-animation: moveToTop .7s ease-in-out both;
+  -moz-animation: moveToTop .7s ease-in-out both;
+  animation: moveToTop .7s ease-in-out both; }
 
 .pt-page-moveToBottomEasing {
-  -webkit-animation: moveToBottom 0.7s ease-in-out both;
-  -moz-animation: moveToBottom 0.7s ease-in-out both;
-  animation: moveToBottom 0.7s ease-in-out both; }
+  -webkit-animation: moveToBottom .7s ease-in-out both;
+  -moz-animation: moveToBottom .7s ease-in-out both;
+  animation: moveToBottom .7s ease-in-out both; }
 
 /********************************* keyframes ************************************* */
 /* move from / to */
@@ -10583,34 +10583,34 @@ footer {
 
 /* scale and fade */
 .pt-page-scaleDown {
-  -webkit-animation: scaleDown 0.7s ease both;
-  -moz-animation: scaleDown 0.7s ease both;
-  animation: scaleDown 0.7s ease both; }
+  -webkit-animation: scaleDown .7s ease both;
+  -moz-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both; }
 
 .pt-page-scaleUp {
-  -webkit-animation: scaleUp 0.7s ease both;
-  -moz-animation: scaleUp 0.7s ease both;
-  animation: scaleUp 0.7s ease both; }
+  -webkit-animation: scaleUp .7s ease both;
+  -moz-animation: scaleUp .7s ease both;
+  animation: scaleUp .7s ease both; }
 
 .pt-page-scaleUpDown {
-  -webkit-animation: scaleUpDown 0.5s ease both;
-  -moz-animation: scaleUpDown 0.5s ease both;
-  animation: scaleUpDown 0.5s ease both; }
+  -webkit-animation: scaleUpDown .5s ease both;
+  -moz-animation: scaleUpDown .5s ease both;
+  animation: scaleUpDown .5s ease both; }
 
 .pt-page-scaleDownUp {
-  -webkit-animation: scaleDownUp 0.5s ease both;
-  -moz-animation: scaleDownUp 0.5s ease both;
-  animation: scaleDownUp 0.5s ease both; }
+  -webkit-animation: scaleDownUp .5s ease both;
+  -moz-animation: scaleDownUp .5s ease both;
+  animation: scaleDownUp .5s ease both; }
 
 .pt-page-scaleDownCenter {
-  -webkit-animation: scaleDownCenter 0.4s ease-in both;
-  -moz-animation: scaleDownCenter 0.4s ease-in both;
-  animation: scaleDownCenter 0.4s ease-in both; }
+  -webkit-animation: scaleDownCenter .4s ease-in both;
+  -moz-animation: scaleDownCenter .4s ease-in both;
+  animation: scaleDownCenter .4s ease-in both; }
 
 .pt-page-scaleUpCenter {
-  -webkit-animation: scaleUpCenter 0.4s ease-out both;
-  -moz-animation: scaleUpCenter 0.4s ease-out both;
-  animation: scaleUpCenter 0.4s ease-out both; }
+  -webkit-animation: scaleUpCenter .4s ease-out both;
+  -moz-animation: scaleUpCenter .4s ease-out both;
+  animation: scaleUpCenter .4s ease-out both; }
 
 /********************************* keyframes ************************************* */
 /* scale and fade */
@@ -10707,100 +10707,100 @@ footer {
 /* rotate sides first and scale */
 .pt-page-rotateRightSideFirst {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateRightSideFirst 0.8s both ease-in;
+  -webkit-animation: rotateRightSideFirst .8s both ease-in;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateRightSideFirst 0.8s both ease-in;
+  -moz-animation: rotateRightSideFirst .8s both ease-in;
   transform-origin: 0% 50%;
-  animation: rotateRightSideFirst 0.8s both ease-in; }
+  animation: rotateRightSideFirst .8s both ease-in; }
 
 .pt-page-rotateLeftSideFirst {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateLeftSideFirst 0.8s both ease-in;
+  -webkit-animation: rotateLeftSideFirst .8s both ease-in;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateLeftSideFirst 0.8s both ease-in;
+  -moz-animation: rotateLeftSideFirst .8s both ease-in;
   transform-origin: 100% 50%;
-  animation: rotateLeftSideFirst 0.8s both ease-in; }
+  animation: rotateLeftSideFirst .8s both ease-in; }
 
 .pt-page-rotateTopSideFirst {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateTopSideFirst 0.8s both ease-in;
+  -webkit-animation: rotateTopSideFirst .8s both ease-in;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateTopSideFirst 0.8s both ease-in;
+  -moz-animation: rotateTopSideFirst .8s both ease-in;
   transform-origin: 50% 100%;
-  animation: rotateTopSideFirst 0.8s both ease-in; }
+  animation: rotateTopSideFirst .8s both ease-in; }
 
 .pt-page-rotateBottomSideFirst {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateBottomSideFirst 0.8s both ease-in;
+  -webkit-animation: rotateBottomSideFirst .8s both ease-in;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateBottomSideFirst 0.8s both ease-in;
+  -moz-animation: rotateBottomSideFirst .8s both ease-in;
   transform-origin: 50% 0%;
-  animation: rotateBottomSideFirst 0.8s both ease-in; }
+  animation: rotateBottomSideFirst .8s both ease-in; }
 
 /* flip */
 .pt-page-flipOutRight {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipOutRight 0.5s both ease-in;
+  -webkit-animation: flipOutRight .5s both ease-in;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: flipOutRight 0.5s both ease-in;
+  -moz-animation: flipOutRight .5s both ease-in;
   transform-origin: 50% 50%;
-  animation: flipOutRight 0.5s both ease-in; }
+  animation: flipOutRight .5s both ease-in; }
 
 .pt-page-flipInLeft {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipInLeft 0.5s both ease-out;
+  -webkit-animation: flipInLeft .5s both ease-out;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: flipInLeft 0.5s both ease-out;
+  -moz-animation: flipInLeft .5s both ease-out;
   transform-origin: 50% 50%;
-  animation: flipInLeft 0.5s both ease-out; }
+  animation: flipInLeft .5s both ease-out; }
 
 .pt-page-flipOutLeft {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipOutLeft 0.5s both ease-in;
+  -webkit-animation: flipOutLeft .5s both ease-in;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: flipOutLeft 0.5s both ease-in;
+  -moz-animation: flipOutLeft .5s both ease-in;
   transform-origin: 50% 50%;
-  animation: flipOutLeft 0.5s both ease-in; }
+  animation: flipOutLeft .5s both ease-in; }
 
 .pt-page-flipInRight {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipInRight 0.5s both ease-out;
+  -webkit-animation: flipInRight .5s both ease-out;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: flipInRight 0.5s both ease-out;
+  -moz-animation: flipInRight .5s both ease-out;
   transform-origin: 50% 50%;
-  animation: flipInRight 0.5s both ease-out; }
+  animation: flipInRight .5s both ease-out; }
 
 .pt-page-flipOutTop {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipOutTop 0.5s both ease-in;
+  -webkit-animation: flipOutTop .5s both ease-in;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: flipOutTop 0.5s both ease-in;
+  -moz-animation: flipOutTop .5s both ease-in;
   transform-origin: 50% 50%;
-  animation: flipOutTop 0.5s both ease-in; }
+  animation: flipOutTop .5s both ease-in; }
 
 .pt-page-flipInBottom {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipInBottom 0.5s both ease-out;
+  -webkit-animation: flipInBottom .5s both ease-out;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: flipInBottom 0.5s both ease-out;
+  -moz-animation: flipInBottom .5s both ease-out;
   transform-origin: 50% 50%;
-  animation: flipInBottom 0.5s both ease-out; }
+  animation: flipInBottom .5s both ease-out; }
 
 .pt-page-flipOutBottom {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipOutBottom 0.5s both ease-in;
+  -webkit-animation: flipOutBottom .5s both ease-in;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: flipOutBottom 0.5s both ease-in;
+  -moz-animation: flipOutBottom .5s both ease-in;
   transform-origin: 50% 50%;
-  animation: flipOutBottom 0.5s both ease-in; }
+  animation: flipOutBottom .5s both ease-in; }
 
 .pt-page-flipInTop {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flipInTop 0.5s both ease-out;
+  -webkit-animation: flipInTop .5s both ease-out;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: flipInTop 0.5s both ease-out;
+  -moz-animation: flipInTop .5s both ease-out;
   transform-origin: 50% 50%;
-  animation: flipInTop 0.5s both ease-out; }
+  animation: flipInTop .5s both ease-out; }
 
 /* rotate fall */
 .pt-page-rotateFall {
@@ -10814,363 +10814,363 @@ footer {
 /* rotate newspaper */
 .pt-page-rotateOutNewspaper {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: rotateOutNewspaper 0.5s both ease-in;
+  -webkit-animation: rotateOutNewspaper .5s both ease-in;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: rotateOutNewspaper 0.5s both ease-in;
+  -moz-animation: rotateOutNewspaper .5s both ease-in;
   transform-origin: 50% 50%;
-  animation: rotateOutNewspaper 0.5s both ease-in; }
+  animation: rotateOutNewspaper .5s both ease-in; }
 
 .pt-page-rotateInNewspaper {
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation: rotateInNewspaper 0.5s both ease-out;
+  -webkit-animation: rotateInNewspaper .5s both ease-out;
   -moz-transform-origin: 50% 50%;
-  -moz-animation: rotateInNewspaper 0.5s both ease-out;
+  -moz-animation: rotateInNewspaper .5s both ease-out;
   transform-origin: 50% 50%;
-  animation: rotateInNewspaper 0.5s both ease-out; }
+  animation: rotateInNewspaper .5s both ease-out; }
 
 /* push */
 .pt-page-rotatePushLeft {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotatePushLeft 0.8s both ease;
+  -webkit-animation: rotatePushLeft .8s both ease;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotatePushLeft 0.8s both ease;
+  -moz-animation: rotatePushLeft .8s both ease;
   transform-origin: 0% 50%;
-  animation: rotatePushLeft 0.8s both ease; }
+  animation: rotatePushLeft .8s both ease; }
 
 .pt-page-rotatePushRight {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotatePushRight 0.8s both ease;
+  -webkit-animation: rotatePushRight .8s both ease;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotatePushRight 0.8s both ease;
+  -moz-animation: rotatePushRight .8s both ease;
   transform-origin: 100% 50%;
-  animation: rotatePushRight 0.8s both ease; }
+  animation: rotatePushRight .8s both ease; }
 
 .pt-page-rotatePushTop {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotatePushTop 0.8s both ease;
+  -webkit-animation: rotatePushTop .8s both ease;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotatePushTop 0.8s both ease;
+  -moz-animation: rotatePushTop .8s both ease;
   transform-origin: 50% 0%;
-  animation: rotatePushTop 0.8s both ease; }
+  animation: rotatePushTop .8s both ease; }
 
 .pt-page-rotatePushBottom {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotatePushBottom 0.8s both ease;
+  -webkit-animation: rotatePushBottom .8s both ease;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotatePushBottom 0.8s both ease;
+  -moz-animation: rotatePushBottom .8s both ease;
   transform-origin: 50% 100%;
-  animation: rotatePushBottom 0.8s both ease; }
+  animation: rotatePushBottom .8s both ease; }
 
 /* pull */
 .pt-page-rotatePullRight {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotatePullRight 0.5s both ease;
+  -webkit-animation: rotatePullRight .5s both ease;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotatePullRight 0.5s both ease;
+  -moz-animation: rotatePullRight .5s both ease;
   transform-origin: 100% 50%;
-  animation: rotatePullRight 0.5s both ease; }
+  animation: rotatePullRight .5s both ease; }
 
 .pt-page-rotatePullLeft {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotatePullLeft 0.5s both ease;
+  -webkit-animation: rotatePullLeft .5s both ease;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotatePullLeft 0.5s both ease;
+  -moz-animation: rotatePullLeft .5s both ease;
   transform-origin: 0% 50%;
-  animation: rotatePullLeft 0.5s both ease; }
+  animation: rotatePullLeft .5s both ease; }
 
 .pt-page-rotatePullTop {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotatePullTop 0.5s both ease;
+  -webkit-animation: rotatePullTop .5s both ease;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotatePullTop 0.5s both ease;
+  -moz-animation: rotatePullTop .5s both ease;
   transform-origin: 50% 0%;
-  animation: rotatePullTop 0.5s both ease; }
+  animation: rotatePullTop .5s both ease; }
 
 .pt-page-rotatePullBottom {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotatePullBottom 0.5s both ease;
+  -webkit-animation: rotatePullBottom .5s both ease;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotatePullBottom 0.5s both ease;
+  -moz-animation: rotatePullBottom .5s both ease;
   transform-origin: 50% 100%;
-  animation: rotatePullBottom 0.5s both ease; }
+  animation: rotatePullBottom .5s both ease; }
 
 /* fold */
 .pt-page-rotateFoldRight {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateFoldRight 0.7s both ease;
+  -webkit-animation: rotateFoldRight .7s both ease;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateFoldRight 0.7s both ease;
+  -moz-animation: rotateFoldRight .7s both ease;
   transform-origin: 0% 50%;
-  animation: rotateFoldRight 0.7s both ease; }
+  animation: rotateFoldRight .7s both ease; }
 
 .pt-page-rotateFoldLeft {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateFoldLeft 0.7s both ease;
+  -webkit-animation: rotateFoldLeft .7s both ease;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateFoldLeft 0.7s both ease;
+  -moz-animation: rotateFoldLeft .7s both ease;
   transform-origin: 100% 50%;
-  animation: rotateFoldLeft 0.7s both ease; }
+  animation: rotateFoldLeft .7s both ease; }
 
 .pt-page-rotateFoldTop {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateFoldTop 0.7s both ease;
+  -webkit-animation: rotateFoldTop .7s both ease;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateFoldTop 0.7s both ease;
+  -moz-animation: rotateFoldTop .7s both ease;
   transform-origin: 50% 100%;
-  animation: rotateFoldTop 0.7s both ease; }
+  animation: rotateFoldTop .7s both ease; }
 
 .pt-page-rotateFoldBottom {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateFoldBottom 0.7s both ease;
+  -webkit-animation: rotateFoldBottom .7s both ease;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateFoldBottom 0.7s both ease;
+  -moz-animation: rotateFoldBottom .7s both ease;
   transform-origin: 50% 0%;
-  animation: rotateFoldBottom 0.7s both ease; }
+  animation: rotateFoldBottom .7s both ease; }
 
 /* unfold */
 .pt-page-rotateUnfoldLeft {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateUnfoldLeft 0.7s both ease;
+  -webkit-animation: rotateUnfoldLeft .7s both ease;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateUnfoldLeft 0.7s both ease;
+  -moz-animation: rotateUnfoldLeft .7s both ease;
   transform-origin: 100% 50%;
-  animation: rotateUnfoldLeft 0.7s both ease; }
+  animation: rotateUnfoldLeft .7s both ease; }
 
 .pt-page-rotateUnfoldRight {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateUnfoldRight 0.7s both ease;
+  -webkit-animation: rotateUnfoldRight .7s both ease;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateUnfoldRight 0.7s both ease;
+  -moz-animation: rotateUnfoldRight .7s both ease;
   transform-origin: 0% 50%;
-  animation: rotateUnfoldRight 0.7s both ease; }
+  animation: rotateUnfoldRight .7s both ease; }
 
 .pt-page-rotateUnfoldTop {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateUnfoldTop 0.7s both ease;
+  -webkit-animation: rotateUnfoldTop .7s both ease;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateUnfoldTop 0.7s both ease;
+  -moz-animation: rotateUnfoldTop .7s both ease;
   transform-origin: 50% 100%;
-  animation: rotateUnfoldTop 0.7s both ease; }
+  animation: rotateUnfoldTop .7s both ease; }
 
 .pt-page-rotateUnfoldBottom {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateUnfoldBottom 0.7s both ease;
+  -webkit-animation: rotateUnfoldBottom .7s both ease;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateUnfoldBottom 0.7s both ease;
+  -moz-animation: rotateUnfoldBottom .7s both ease;
   transform-origin: 50% 0%;
-  animation: rotateUnfoldBottom 0.7s both ease; }
+  animation: rotateUnfoldBottom .7s both ease; }
 
 /* room walls */
 .pt-page-rotateRoomLeftOut {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateRoomLeftOut 0.8s both ease;
+  -webkit-animation: rotateRoomLeftOut .8s both ease;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateRoomLeftOut 0.8s both ease;
+  -moz-animation: rotateRoomLeftOut .8s both ease;
   transform-origin: 100% 50%;
-  animation: rotateRoomLeftOut 0.8s both ease; }
+  animation: rotateRoomLeftOut .8s both ease; }
 
 .pt-page-rotateRoomLeftIn {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateRoomLeftIn 0.8s both ease;
+  -webkit-animation: rotateRoomLeftIn .8s both ease;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateRoomLeftIn 0.8s both ease;
+  -moz-animation: rotateRoomLeftIn .8s both ease;
   transform-origin: 0% 50%;
-  animation: rotateRoomLeftIn 0.8s both ease; }
+  animation: rotateRoomLeftIn .8s both ease; }
 
 .pt-page-rotateRoomRightOut {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateRoomRightOut 0.8s both ease;
+  -webkit-animation: rotateRoomRightOut .8s both ease;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateRoomRightOut 0.8s both ease;
+  -moz-animation: rotateRoomRightOut .8s both ease;
   transform-origin: 0% 50%;
-  animation: rotateRoomRightOut 0.8s both ease; }
+  animation: rotateRoomRightOut .8s both ease; }
 
 .pt-page-rotateRoomRightIn {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateRoomRightIn 0.8s both ease;
+  -webkit-animation: rotateRoomRightIn .8s both ease;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateRoomRightIn 0.8s both ease;
+  -moz-animation: rotateRoomRightIn .8s both ease;
   transform-origin: 100% 50%;
-  animation: rotateRoomRightIn 0.8s both ease; }
+  animation: rotateRoomRightIn .8s both ease; }
 
 .pt-page-rotateRoomTopOut {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateRoomTopOut 0.8s both ease;
+  -webkit-animation: rotateRoomTopOut .8s both ease;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateRoomTopOut 0.8s both ease;
+  -moz-animation: rotateRoomTopOut .8s both ease;
   transform-origin: 50% 100%;
-  animation: rotateRoomTopOut 0.8s both ease; }
+  animation: rotateRoomTopOut .8s both ease; }
 
 .pt-page-rotateRoomTopIn {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateRoomTopIn 0.8s both ease;
+  -webkit-animation: rotateRoomTopIn .8s both ease;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateRoomTopIn 0.8s both ease;
+  -moz-animation: rotateRoomTopIn .8s both ease;
   transform-origin: 50% 0%;
-  animation: rotateRoomTopIn 0.8s both ease; }
+  animation: rotateRoomTopIn .8s both ease; }
 
 .pt-page-rotateRoomBottomOut {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateRoomBottomOut 0.8s both ease;
+  -webkit-animation: rotateRoomBottomOut .8s both ease;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateRoomBottomOut 0.8s both ease;
+  -moz-animation: rotateRoomBottomOut .8s both ease;
   transform-origin: 50% 0%;
-  animation: rotateRoomBottomOut 0.8s both ease; }
+  animation: rotateRoomBottomOut .8s both ease; }
 
 .pt-page-rotateRoomBottomIn {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateRoomBottomIn 0.8s both ease;
+  -webkit-animation: rotateRoomBottomIn .8s both ease;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateRoomBottomIn 0.8s both ease;
+  -moz-animation: rotateRoomBottomIn .8s both ease;
   transform-origin: 50% 100%;
-  animation: rotateRoomBottomIn 0.8s both ease; }
+  animation: rotateRoomBottomIn .8s both ease; }
 
 /* cube */
 .pt-page-rotateCubeLeftOut {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateCubeLeftOut 0.6s both ease-in;
+  -webkit-animation: rotateCubeLeftOut .6s both ease-in;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateCubeLeftOut 0.6s both ease-in;
+  -moz-animation: rotateCubeLeftOut .6s both ease-in;
   transform-origin: 100% 50%;
-  animation: rotateCubeLeftOut 0.6s both ease-in; }
+  animation: rotateCubeLeftOut .6s both ease-in; }
 
 .pt-page-rotateCubeLeftIn {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateCubeLeftIn 0.6s both ease-in;
+  -webkit-animation: rotateCubeLeftIn .6s both ease-in;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateCubeLeftIn 0.6s both ease-in;
+  -moz-animation: rotateCubeLeftIn .6s both ease-in;
   transform-origin: 0% 50%;
-  animation: rotateCubeLeftIn 0.6s both ease-in; }
+  animation: rotateCubeLeftIn .6s both ease-in; }
 
 .pt-page-rotateCubeRightOut {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateCubeRightOut 0.6s both ease-in;
+  -webkit-animation: rotateCubeRightOut .6s both ease-in;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateCubeRightOut 0.6s both ease-in;
+  -moz-animation: rotateCubeRightOut .6s both ease-in;
   transform-origin: 0% 50%;
-  animation: rotateCubeRightOut 0.6s both ease-in; }
+  animation: rotateCubeRightOut .6s both ease-in; }
 
 .pt-page-rotateCubeRightIn {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateCubeRightIn 0.6s both ease-in;
+  -webkit-animation: rotateCubeRightIn .6s both ease-in;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateCubeRightIn 0.6s both ease-in;
+  -moz-animation: rotateCubeRightIn .6s both ease-in;
   transform-origin: 100% 50%;
-  animation: rotateCubeRightIn 0.6s both ease-in; }
+  animation: rotateCubeRightIn .6s both ease-in; }
 
 .pt-page-rotateCubeTopOut {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateCubeTopOut 0.6s both ease-in;
+  -webkit-animation: rotateCubeTopOut .6s both ease-in;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateCubeTopOut 0.6s both ease-in;
+  -moz-animation: rotateCubeTopOut .6s both ease-in;
   transform-origin: 50% 100%;
-  animation: rotateCubeTopOut 0.6s both ease-in; }
+  animation: rotateCubeTopOut .6s both ease-in; }
 
 .pt-page-rotateCubeTopIn {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateCubeTopIn 0.6s both ease-in;
+  -webkit-animation: rotateCubeTopIn .6s both ease-in;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateCubeTopIn 0.6s both ease-in;
+  -moz-animation: rotateCubeTopIn .6s both ease-in;
   transform-origin: 50% 0%;
-  animation: rotateCubeTopIn 0.6s both ease-in; }
+  animation: rotateCubeTopIn .6s both ease-in; }
 
 .pt-page-rotateCubeBottomOut {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateCubeBottomOut 0.6s both ease-in;
+  -webkit-animation: rotateCubeBottomOut .6s both ease-in;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateCubeBottomOut 0.6s both ease-in;
+  -moz-animation: rotateCubeBottomOut .6s both ease-in;
   transform-origin: 50% 0%;
-  animation: rotateCubeBottomOut 0.6s both ease-in; }
+  animation: rotateCubeBottomOut .6s both ease-in; }
 
 .pt-page-rotateCubeBottomIn {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateCubeBottomIn 0.6s both ease-in;
+  -webkit-animation: rotateCubeBottomIn .6s both ease-in;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateCubeBottomIn 0.6s both ease-in;
+  -moz-animation: rotateCubeBottomIn .6s both ease-in;
   transform-origin: 50% 100%;
-  animation: rotateCubeBottomIn 0.6s both ease-in; }
+  animation: rotateCubeBottomIn .6s both ease-in; }
 
 /* carousel */
 .pt-page-rotateCarouselLeftOut {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateCarouselLeftOut 0.8s both ease;
+  -webkit-animation: rotateCarouselLeftOut .8s both ease;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateCarouselLeftOut 0.8s both ease;
+  -moz-animation: rotateCarouselLeftOut .8s both ease;
   transform-origin: 100% 50%;
-  animation: rotateCarouselLeftOut 0.8s both ease; }
+  animation: rotateCarouselLeftOut .8s both ease; }
 
 .pt-page-rotateCarouselLeftIn {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateCarouselLeftIn 0.8s both ease;
+  -webkit-animation: rotateCarouselLeftIn .8s both ease;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateCarouselLeftIn 0.8s both ease;
+  -moz-animation: rotateCarouselLeftIn .8s both ease;
   transform-origin: 0% 50%;
-  animation: rotateCarouselLeftIn 0.8s both ease; }
+  animation: rotateCarouselLeftIn .8s both ease; }
 
 .pt-page-rotateCarouselRightOut {
   -webkit-transform-origin: 0% 50%;
-  -webkit-animation: rotateCarouselRightOut 0.8s both ease;
+  -webkit-animation: rotateCarouselRightOut .8s both ease;
   -moz-transform-origin: 0% 50%;
-  -moz-animation: rotateCarouselRightOut 0.8s both ease;
+  -moz-animation: rotateCarouselRightOut .8s both ease;
   transform-origin: 0% 50%;
-  animation: rotateCarouselRightOut 0.8s both ease; }
+  animation: rotateCarouselRightOut .8s both ease; }
 
 .pt-page-rotateCarouselRightIn {
   -webkit-transform-origin: 100% 50%;
-  -webkit-animation: rotateCarouselRightIn 0.8s both ease;
+  -webkit-animation: rotateCarouselRightIn .8s both ease;
   -moz-transform-origin: 100% 50%;
-  -moz-animation: rotateCarouselRightIn 0.8s both ease;
+  -moz-animation: rotateCarouselRightIn .8s both ease;
   transform-origin: 100% 50%;
-  animation: rotateCarouselRightIn 0.8s both ease; }
+  animation: rotateCarouselRightIn .8s both ease; }
 
 .pt-page-rotateCarouselTopOut {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateCarouselTopOut 0.8s both ease;
+  -webkit-animation: rotateCarouselTopOut .8s both ease;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateCarouselTopOut 0.8s both ease;
+  -moz-animation: rotateCarouselTopOut .8s both ease;
   transform-origin: 50% 100%;
-  animation: rotateCarouselTopOut 0.8s both ease; }
+  animation: rotateCarouselTopOut .8s both ease; }
 
 .pt-page-rotateCarouselTopIn {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateCarouselTopIn 0.8s both ease;
+  -webkit-animation: rotateCarouselTopIn .8s both ease;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateCarouselTopIn 0.8s both ease;
+  -moz-animation: rotateCarouselTopIn .8s both ease;
   transform-origin: 50% 0%;
-  animation: rotateCarouselTopIn 0.8s both ease; }
+  animation: rotateCarouselTopIn .8s both ease; }
 
 .pt-page-rotateCarouselBottomOut {
   -webkit-transform-origin: 50% 0%;
-  -webkit-animation: rotateCarouselBottomOut 0.8s both ease;
+  -webkit-animation: rotateCarouselBottomOut .8s both ease;
   -moz-transform-origin: 50% 0%;
-  -moz-animation: rotateCarouselBottomOut 0.8s both ease;
+  -moz-animation: rotateCarouselBottomOut .8s both ease;
   transform-origin: 50% 0%;
-  animation: rotateCarouselBottomOut 0.8s both ease; }
+  animation: rotateCarouselBottomOut .8s both ease; }
 
 .pt-page-rotateCarouselBottomIn {
   -webkit-transform-origin: 50% 100%;
-  -webkit-animation: rotateCarouselBottomIn 0.8s both ease;
+  -webkit-animation: rotateCarouselBottomIn .8s both ease;
   -moz-transform-origin: 50% 100%;
-  -moz-animation: rotateCarouselBottomIn 0.8s both ease;
+  -moz-animation: rotateCarouselBottomIn .8s both ease;
   transform-origin: 50% 100%;
-  animation: rotateCarouselBottomIn 0.8s both ease; }
+  animation: rotateCarouselBottomIn .8s both ease; }
 
 /* sides */
 .pt-page-rotateSidesOut {
   -webkit-transform-origin: -50% 50%;
-  -webkit-animation: rotateSidesOut 0.5s both ease-in;
+  -webkit-animation: rotateSidesOut .5s both ease-in;
   -moz-transform-origin: -50% 50%;
-  -moz-animation: rotateSidesOut 0.5s both ease-in;
+  -moz-animation: rotateSidesOut .5s both ease-in;
   transform-origin: -50% 50%;
-  animation: rotateSidesOut 0.5s both ease-in; }
+  animation: rotateSidesOut .5s both ease-in; }
 
 .pt-page-rotateSidesIn {
   -webkit-transform-origin: 150% 50%;
-  -webkit-animation: rotateSidesIn 0.5s both ease-out;
+  -webkit-animation: rotateSidesIn .5s both ease-out;
   -moz-transform-origin: 150% 50%;
-  -moz-animation: rotateSidesIn 0.5s both ease-out;
+  -moz-animation: rotateSidesIn .5s both ease-out;
   transform-origin: 150% 50%;
-  animation: rotateSidesIn 0.5s both ease-out; }
+  animation: rotateSidesIn .5s both ease-out; }
 
 /* slide */
 .pt-page-rotateSlideOut {

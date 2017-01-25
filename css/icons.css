@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Aitu-Material-Design-Icons-Regular';
-  src: url(/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.eot");
-  src: url(/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.eot?#iefix") format("embedded-opentype"), url(/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.woff") format("woff"), url(/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.ttf") format("truetype"), url(/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.svg#Aitu-Material-Design-Icons-Regular") format("svg");
+  src: url("/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.eot");
+  src: url("/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.eot?#iefix") format("embedded-opentype"), url("/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.woff") format("woff"), url("/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.ttf") format("truetype"), url("/_assets/fonts/Aitu-Material-Design-Icons-Regular_gdi.svg#Aitu-Material-Design-Icons-Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal; }
